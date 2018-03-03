@@ -639,6 +639,13 @@
 			remoteGlobalIDString = A97654E418E0B29B00E25169;
 			remoteInfo = "TwitterKit-static";
 		};
+		62FE4574204A1F630031C5C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 209DE40F1FB2857000A2E188 /* TwitterShareExtensionUI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BFE95FEB1DAC2E1B00638749;
+			remoteInfo = TwitterShareExtensionUI;
+		};
 		9D40087E1B1D033C0091E4D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D4008771B1D033C0091E4D3 /* TwitterCore.xcodeproj */;
@@ -2656,6 +2663,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				62FE4575204A1F630031C5C4 /* PBXTargetDependency */,
 				2007D5441FE2EBDE00B00FF3 /* PBXTargetDependency */,
 				BFE8397F1ADF23700035CBA1 /* PBXTargetDependency */,
 			);
@@ -3131,6 +3139,11 @@
 			isa = PBXTargetDependency;
 			target = A97654E418E0B29B00E25169 /* TwitterKit-static */;
 			targetProxy = 3703BEAE1A37E51B00AA639A /* PBXContainerItemProxy */;
+		};
+		62FE4575204A1F630031C5C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TwitterShareExtensionUI;
+			targetProxy = 62FE4574204A1F630031C5C4 /* PBXContainerItemProxy */;
 		};
 		9D40088C1B1D059D0091E4D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
