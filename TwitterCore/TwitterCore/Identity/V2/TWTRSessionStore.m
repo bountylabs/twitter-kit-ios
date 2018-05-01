@@ -181,6 +181,7 @@ static NSString *const TWTRSessionStoreGuestUserName = @"com.twitter.sdk.ios.cor
     return [[self existingUserSessions] lastObject];
 }
 
+#if !TARGET_OS_TV
 - (void)logInWithSystemAccountsCompletion:(TWTRSessionLogInCompletion)completion __TVOS_UNAVAILABLE
 {
     TWTRParameterAssertOrReturn(completion);
@@ -198,6 +199,7 @@ static NSString *const TWTRSessionStoreGuestUserName = @"com.twitter.sdk.ios.cor
                                                    });
                                                }];
 }
+#endif
 
 - (void)logOutUserID:(NSString *)userID
 {
