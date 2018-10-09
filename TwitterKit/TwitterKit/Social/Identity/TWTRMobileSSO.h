@@ -49,18 +49,15 @@ typedef void (^TWTRMobileSSOCompletion)(BOOL twitterAppInstalled);
 - (BOOL)processRedirectURL:(NSURL *)url;
 
 /**
- *  Determines if the source application sent from the calling applciation is valid.
- *
- *  Returns YES if the source application is Twitter sanctioned, NO otherwise.
- */
-- (BOOL)verifySourceApplication:(NSString *)sourceApplication;
-
-/**
  *  Verifies if the token embedded in the url is the same one received by oauth/request_token.
  *
  *  Returns YES if the token passed in the url parameter matches the token received by oauth/request_token.
  */
 - (BOOL)verifyOauthTokenResponsefromURL:(NSURL *)url;
+
+- (BOOL)isSSOWithSourceApplication:(NSString *)sourceApplication;
+- (BOOL)isWebWithSourceApplication:(NSString *)sourceApplication;
+- (void)triggerInvalidSourceError;
 
 @end
 
