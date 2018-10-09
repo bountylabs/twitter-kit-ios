@@ -68,24 +68,6 @@
     }
 }
 
-- (BOOL)verifySourceApplication:(NSString *)sourceApplication
-{
-    // If using auth with web view, check that the source application bundle identifier is the same as the app bundle identifier.
-    NSString *bundleID = [[NSBundle mainBundle] bundleIdentifier];
-    BOOL isExpectedSourceApplication = [sourceApplication hasPrefix:@"com.twitter"] || [sourceApplication hasPrefix:@"com.apple"] || [sourceApplication hasPrefix:@"com.atebits"] || [sourceApplication isEqualToString:bundleID];
-    if (!isExpectedSourceApplication) {
-        // The source application for Mobile SSO is not from a valid bundle id
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [[TWTRTwitter sharedInstance].scribeSink didFailSSOLogin];
-            self.completion(nil, [TWTRErrors invalidSourceApplicationError]);
-        });
-
-        return NO;
-    } else {
-        return YES;
-    }
-}
-
 - (BOOL)verifyOauthTokenResponsefromURL:(NSURL *)url
 {
     return [self.loginURLParser isOauthTokenVerifiedFromURL:url];
@@ -117,6 +99,25 @@
     }
 
     return NO;
+}
+
+- (BOOL)isSSOWithSourceApplication:(NSString *)sourceApplication
+{
+    // If using auth with web view, check that the source application bundle identifier is the same as the app bundle identifier.
+    return [sourceApplication hasPrefix:@"com.twitter"] || [sourceApplication hasPrefix:@"com.atebits"];
+}
+
+- (BOOL)isWebWithSourceApplication:(NSString *)sourceApplication
+{
+    NSString *bundleID = [[NSBundle mainBundle] bundleIdentifier];
+    return [sourceApplication hasPrefix:@"com.apple"]  || [sourceApplication isEqualToString:bundleID];
+}
+
+- (void)triggerInvalidSourceError
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.completion(nil, [TWTRErrors invalidSourceApplicationError]);
+    });
 }
 
 @end
