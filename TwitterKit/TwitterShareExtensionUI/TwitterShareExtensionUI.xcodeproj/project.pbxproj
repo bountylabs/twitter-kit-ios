@@ -32,7 +32,7 @@
 		3D90DA281F7377E200B23064 /* TWTRSEImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D90DA251F7377E200B23064 /* TWTRSEImageProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D90DA291F7377E200B23064 /* TWTRSEImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D90DA261F7377E200B23064 /* TWTRSEImageProvider.m */; };
 		3D90DA2A1F7377E200B23064 /* TWTRSEImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D90DA261F7377E200B23064 /* TWTRSEImageProvider.m */; };
-		3DA8FB801EA05D3200E778C9 /* TWTRSEScribe.h in Headers */ = {isa = PBXBuildFile; fileRef = BFBC284D1E5E1E8B00595F01 /* TWTRSEScribe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DA8FB801EA05D3200E778C9 /* TWTRSEScribe.h in Headers */ = {isa = PBXBuildFile; fileRef = BFBC284D1E5E1E8B00595F01 /* TWTRSEScribe.h */; };
 		3DA8FB811EA05D5900E778C9 /* TWTRSETwitterUser.h in Headers */ = {isa = PBXBuildFile; fileRef = BFDCD0CF1E36A42000F0C726 /* TWTRSETwitterUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DA8FB821EA05D5F00E778C9 /* TWTRSEUIScribeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBC28531E5E265700595F01 /* TWTRSEUIScribeEvent.m */; };
 		3DA8FB831EA05D6B00E778C9 /* TWTRSETweetAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038EF61DAEF882004AF59F /* TWTRSETweetAttachment.m */; };
@@ -90,7 +90,7 @@
 		BF92EBF01DB835BE005EB2D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF92EBEF1DB835BE005EB2D7 /* Assets.xcassets */; };
 		BF92EBF81DB83638005EB2D7 /* TWTRSEUIBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = BF92EBF61DB83638005EB2D7 /* TWTRSEUIBundle.m */; };
 		BF99413B1DE3ADE60045467C /* TWTRSETweetCocoaItemProviderAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9941391DE3ADE60045467C /* TWTRSETweetCocoaItemProviderAttachmentView.m */; };
-		BFBC284E1E5E1E9000595F01 /* TWTRSEScribe.h in Headers */ = {isa = PBXBuildFile; fileRef = BFBC284D1E5E1E8B00595F01 /* TWTRSEScribe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBC284E1E5E1E9000595F01 /* TWTRSEScribe.h in Headers */ = {isa = PBXBuildFile; fileRef = BFBC284D1E5E1E8B00595F01 /* TWTRSEScribe.h */; };
 		BFBC28541E5E265700595F01 /* TWTRSEUIScribeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBC28531E5E265700595F01 /* TWTRSEUIScribeEvent.m */; };
 		BFBE02871E2450FF007A246A /* TWTRSEAccountSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E401DAEDA88004AF59F /* TWTRSEAccountSelectionTableViewController.m */; };
 		BFBE02881E2450FF007A246A /* TWTRSEAccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF038E421DAEDA88004AF59F /* TWTRSEAccountTableViewCell.m */; };
