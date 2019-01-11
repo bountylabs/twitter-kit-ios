@@ -73,6 +73,11 @@
     return [self.loginURLParser isOauthTokenVerifiedFromURL:url];
 }
 
+- (BOOL)verifyIdentifierFromURL:(NSURL *)url
+{
+    return [self.loginURLParser isIdentifierVerifiedFromURL:url];
+}
+
 - (BOOL)processRedirectURL:(NSURL *)url
 {
     if ([self.loginURLParser isMobileSSOCancelURL:url]) {

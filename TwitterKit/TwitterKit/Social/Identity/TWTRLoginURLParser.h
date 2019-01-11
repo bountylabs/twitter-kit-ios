@@ -65,6 +65,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  Returns YES if the stored stoken matches the token in the url parameter.
  */
 - (BOOL)isOauthTokenVerifiedFromURL:(NSURL *)url;
+- (BOOL)isIdentifierVerifiedFromURL:(NSURL *)url;
 
 #pragma mark - Mobile SSO
 

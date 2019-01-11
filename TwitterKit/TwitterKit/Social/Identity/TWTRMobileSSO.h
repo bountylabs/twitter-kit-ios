@@ -54,6 +54,7 @@ typedef void (^TWTRMobileSSOCompletion)(BOOL twitterAppInstalled);
  *  Returns YES if the token passed in the url parameter matches the token received by oauth/request_token.
  */
 - (BOOL)verifyOauthTokenResponsefromURL:(NSURL *)url;
+- (BOOL)verifyIdentifierFromURL:(NSURL *)url;
 
 - (BOOL)isSSOWithSourceApplication:(NSString *)sourceApplication;
 - (BOOL)isWebWithSourceApplication:(NSString *)sourceApplication;

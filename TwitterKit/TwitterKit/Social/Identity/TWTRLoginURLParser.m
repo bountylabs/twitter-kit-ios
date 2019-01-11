@@ -28,6 +28,7 @@
 
 @property (nonatomic, copy) NSString *twitterKitURLScheme;
 @property (nonatomic, copy) NSString *twitterAuthURL;
+@property (nonatomic, copy) NSString *nonce;
 
 @end
 
@@ -37,7 +38,12 @@
 {
     if (self = [super init]) {
         self.twitterKitURLScheme = [NSString stringWithFormat:@"twitterkit-%@", config.consumerKey];
-        self.twitterAuthURL = [NSString stringWithFormat:@"twitterauth://authorize?consumer_key=%@&consumer_secret=%@&oauth_callback=%@", config.consumerKey, config.consumerSecret, self.twitterKitURLScheme];
+        self.nonce = [self generateNonce];
+        if ([self.nonce length] > 0) {
+            self.twitterAuthURL = [NSString stringWithFormat:@"twitterauth://authorize?consumer_key=%@&consumer_secret=%@&oauth_callback=%@&identifier=%@", config.consumerKey, config.consumerSecret, self.twitterKitURLScheme, self.nonce];
+        } else {
+            self.twitterAuthURL = [NSString stringWithFormat:@"twitterauth://authorize?consumer_key=%@&consumer_secret=%@&oauth_callback=%@", config.consumerKey, config.consumerSecret, self.twitterKitURLScheme];
+        }
     }
     return self;
 }
@@ -59,7 +65,7 @@
 
     NSDictionary *parameters = [TWTRNetworkingUtil parametersFromQueryString:url.host];
     NSArray *keys = [parameters allKeys];
-    BOOL successState = [keys containsObject:@"secret"] && [keys containsObject:@"token"] && [keys containsObject:@"username"] && properScheme;
+    BOOL successState = [keys containsObject:@"secret"] && [keys containsObject:@"token"] && [keys containsObject:@"username"] && [keys containsObject:@"identifier"] && properScheme;
 
     BOOL isSuccessURL = successState && properScheme;
 
@@ -82,6 +88,22 @@
     NSString *token = parameters[TWTRAuthOAuthTokenKey];
 
     return [[[TWTRTwitter sharedInstance] sessionStore] isValidOauthToken:token];
+}
+
+- (BOOL)isIdentifierVerifiedFromURL:(NSURL *)url
+{
+    // Ignore this check if a nonce was not sent.
+    if ([self.nonce length] <= 0) {
+        return YES;
+    }
+
+    NSDictionary *parameters = [self parametersForSSOURL:url];
+    NSString *identifier = parameters[@"identifier"];
+    if (identifier == nil) {
+        return NO;
+    }
+
+    return [self.nonce isEqualToString:identifier];
 }
 
 - (NSDictionary *)parametersForSSOURL:(NSURL *)url
@@ -143,6 +165,18 @@
     }
 
     return matchingScheme;
+}
+
+- (NSString *)generateNonce
+{
+    NSMutableData *data = [NSMutableData dataWithLength:48];
+    int result = SecRandomCopyBytes(NULL, 48, data.mutableBytes);
+    if (result != 0) {
+        return nil;
+    }
+
+    NSString *base64EncodedData = [data base64EncodedStringWithOptions:0];
+    return base64EncodedData;
 }
 
 @end
