@@ -25,7 +25,6 @@
 #import "TWTRAuthenticationConstants.h"
 #import "TWTRConstants.h"
 #import "TWTRDictUtil.h"
-#import "TWTRErrorLogger.h"
 #import "TWTRGuestAuthProvider.h"
 #import "TWTRGuestSession_Private.h"
 #import "TWTRSession.h"
@@ -47,7 +46,7 @@
         appleSocialAuthProvider = nil;  // accessed here to retain it while the action sheet created by it may be visible.
 
         if (socialAuthError) {
-            [errorLogger didEncounterError:socialAuthError withMessage:@"Unable to authenticate using the system account."];
+            NSLog(@"[TwitterKit] Error: Unable to authenticate using the system account.");
             [self callUserCompletionWithResponseDict:nil withError:socialAuthError completion:completion];
         } else {
             [self callUserCompletionWithResponseDict:socialAuthResponseDict withError:nil completion:completion];

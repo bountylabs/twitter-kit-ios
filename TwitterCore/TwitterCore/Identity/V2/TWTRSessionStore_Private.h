@@ -21,7 +21,6 @@
 
 // TODO: this is temporary. clean up after refactoring scribe layer
 #import <TwitterCore/TWTRSessionStore.h>
-#import "TWTRScribeService.h"
 
 @class TWTRAuthConfig;
 @protocol TWTRAPIServiceConfig;
@@ -107,8 +106,8 @@ typedef void (^TWTRSessionStoreUserSessionSavedCompletion)(id<TWTRAuthSession> s
  *
  *  @return A fully initialized session store.
  */
-- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig refreshStrategies:(NSArray *)refreshStrategies URLSession:(NSURLSession *)URLSession errorLogger:(id<TWTRErrorLogger>)errorLogger;
-- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig refreshStrategies:(NSArray *)refreshStrategies URLSession:(NSURLSession *)URLSession errorLogger:(id<TWTRErrorLogger>)errorLogger accessGroup:(nullable NSString *)accessGroup NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig refreshStrategies:(NSArray *)refreshStrategies URLSession:(NSURLSession *)URLSession;
+- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig refreshStrategies:(NSArray *)refreshStrategies URLSession:(NSURLSession *)URLSession accessGroup:(nullable NSString *)accessGroup NS_DESIGNATED_INITIALIZER;
 
 - (NSString *)userSessionServiceName;
 - (NSString *)guestSessionServiceName;

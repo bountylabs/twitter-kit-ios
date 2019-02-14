@@ -19,7 +19,6 @@
 #import "TWTRAPIServiceConfig.h"
 #import "TWTRAssertionMacros.h"
 #import "TWTRAuthSession.h"
-#import "TWTRErrorLogger.h"
 #import "TWTRGenericKeychainItem.h"
 #import "TWTRGuestSession.h"
 #import "TWTRNetworkSessionProvider.h"
@@ -65,21 +64,19 @@ static NSString *const TWTRSessionStoreGuestUserName = @"com.twitter.sdk.ios.cor
 
 #pragma mark - Initialization
 
-- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig refreshStrategies:(NSArray *)refreshStrategies URLSession:(NSURLSession *)URLSession errorLogger:(id<TWTRErrorLogger>)errorLogger
+- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig refreshStrategies:(NSArray *)refreshStrategies URLSession:(NSURLSession *)URLSession
 {
-    return [self initWithAuthConfig:authConfig APIServiceConfig:APIServiceConfig refreshStrategies:refreshStrategies URLSession:URLSession errorLogger:errorLogger accessGroup:nil];
+    return [self initWithAuthConfig:authConfig APIServiceConfig:APIServiceConfig refreshStrategies:refreshStrategies URLSession:URLSession accessGroup:nil];
 }
 
-- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig refreshStrategies:(NSArray *)refreshStrategies URLSession:(NSURLSession *)URLSession errorLogger:(id<TWTRErrorLogger>)errorLogger accessGroup:(nullable NSString *)accessGroup
+- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig APIServiceConfig:(id<TWTRAPIServiceConfig>)APIServiceConfig refreshStrategies:(NSArray *)refreshStrategies URLSession:(NSURLSession *)URLSession accessGroup:(nullable NSString *)accessGroup
 {
-    TWTRParameterAssertOrReturnValue(authConfig && APIServiceConfig && refreshStrategies && URLSession && errorLogger, nil);
+    TWTRParameterAssertOrReturnValue(authConfig && APIServiceConfig && refreshStrategies && URLSession, nil);
 
     if (self = [super init]) {
         _APIServiceConfig = APIServiceConfig;
         _authConfig = authConfig;
         _accessGroup = [accessGroup copy];
-
-        _errorLogger = errorLogger;
         _authSessionCache = [NSMutableArray array];
 
         _refreshStrategies = [refreshStrategies copy];

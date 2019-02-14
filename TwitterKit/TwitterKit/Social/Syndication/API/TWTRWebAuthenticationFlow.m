@@ -78,7 +78,7 @@
 {
     TWTRParameterAssertOrReturn(completion);
 
-    TWTRWebAuthenticationTokenRequestor *tokenRequestor = [[TWTRWebAuthenticationTokenRequestor alloc] initWithAuthConfig:self.sessionStore.authConfig serviceConfig:self.sessionStore.APIServiceConfig errorLogger:self.sessionStore.errorLogger];
+    TWTRWebAuthenticationTokenRequestor *tokenRequestor = [[TWTRWebAuthenticationTokenRequestor alloc] initWithAuthConfig:self.sessionStore.authConfig serviceConfig:self.sessionStore.APIServiceConfig];
     [tokenRequestor requestAuthenticationToken:^(NSString *token, NSError *error) {
         if (token) {
             completion(token);

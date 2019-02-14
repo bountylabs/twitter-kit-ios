@@ -26,7 +26,6 @@
 #import "TWTRAssertionMacros.h"
 #import "TWTRAuthenticationConstants.h"
 #import "TWTRConstants.h"
-#import "TWTRErrorLogger.h"
 #import "TWTRSession.h"
 #import "TWTRUserAPIClient.h"
 #import "TWTRUtils.h"
@@ -148,14 +147,14 @@ NSString *const TWTRSocialAppProviderActionSheetCompletionKey = @"TWTRAppleSocia
     [self.twitterClient sendAsynchronousRequest:request
                                      completion:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
                                          if (connectionError) {
-                                             [self.errorLogger didEncounterError:connectionError withMessage:@"Error attempting to obtain temporary auth token."];
+                                             NSLog(@"[TwitterKit] Error attempting to obtain temporary auth token.");
                                              completion(nil, connectionError);
                                              return;
                                          }
                                          NSString *authToken = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
                                          if (authToken == nil) {
                                              NSError *reverseAuthError = [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeReverseAuthFailed userInfo:@{NSLocalizedDescriptionKey: @"Reverse auth failed."}];
-                                             [self.errorLogger didEncounterError:reverseAuthError withMessage:@"Error performing reverse auth."];
+                                             NSLog(@"[TwitterKit] Error performing reverse auth.");
                                              completion(nil, reverseAuthError);
                                              return;
                                          }
@@ -195,11 +194,11 @@ NSString *const TWTRSocialAppProviderActionSheetCompletionKey = @"TWTRAppleSocia
 
                                         NSError *renewError = [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeSystemAccountCredentialsInvalid userInfo:userInfo];
 
-                                        [self.errorLogger didEncounterError:renewError withMessage:@"User's system account credentials are invalid."];
+                                        NSLog(@"[TwitterKit] User's system account credentials are invalid.");
                                         completion(nil, renewError);
 
                                     } else {
-                                        [self.errorLogger didEncounterError:error withMessage:@"Error retrieving reverse-auth access token."];
+                                        NSLog(@"[TwitterKit] Error retrieving reverse-auth access token.");
                                         completion(nil, error);
                                     }
                                 } else {

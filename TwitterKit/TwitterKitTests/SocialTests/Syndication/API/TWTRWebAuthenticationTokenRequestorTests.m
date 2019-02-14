@@ -16,7 +16,6 @@
  */
 
 #import <OCMock/OCMock.h>
-#import <TwitterCore/TWTRErrorLogger.h>
 #import <TwitterCore/TWTRGuestSession.h>
 #import <TwitterCore/TWTRNetworking.h>
 #import <TwitterCore/TWTRSession.h>
@@ -52,12 +51,10 @@
     _mockAPIClient = OCMClassMock([TWTRNetworking class]);
     OCMStub([_mockAPIClient URLSession]).andReturn(mockURLSession);
 
-    self.errorLoggerMock = OCMProtocolMock(@protocol(TWTRErrorLogger));
-
     TWTRTwitterAPIServiceConfig *serviceConfig = [[TWTRTwitterAPIServiceConfig alloc] init];
     TWTRAuthConfig *authConfig = [[TWTRAuthConfig alloc] initWithConsumerKey:@"key" consumerSecret:@"secret"];
 
-    self.requestor = [[TWTRWebAuthenticationTokenRequestor alloc] initWithAuthConfig:authConfig serviceConfig:serviceConfig errorLogger:self.errorLoggerMock];
+    self.requestor = [[TWTRWebAuthenticationTokenRequestor alloc] initWithAuthConfig:authConfig serviceConfig:serviceConfig];
 }
 
 - (void)tearDown

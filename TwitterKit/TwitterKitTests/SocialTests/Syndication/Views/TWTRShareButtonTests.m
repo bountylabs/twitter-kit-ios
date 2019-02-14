@@ -48,10 +48,6 @@ static TWTRTweet *testTweet;
 @property (nonatomic, assign) BOOL shouldSucceed;
 @end
 @implementation StubActivityViewController
-- (instancetype)init
-{
-    return [super initWithActivityItems:@[] applicationActivities:nil];
-}
 - (void)setCompletionWithItemsHandler:(UIActivityViewControllerCompletionWithItemsHandler)completionHandler
 {
     completionHandler(@"mailActivity", self.shouldSucceed, nil, nil);

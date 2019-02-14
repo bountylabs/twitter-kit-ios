@@ -31,7 +31,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) TWTRTweet *tweet;
 @property (nonatomic, readonly) TWTRVideoPlaybackConfiguration *playbackConfiguration;
 @property (nonatomic, readonly) TWTRVideoPlayerOutputView *playerView;
-@property (nonatomic, readonly) TWTRScribeSink *scribeSink;
 
 @property (nonatomic, nullable) TWTRVideoControlsView *controlsView;
 @property (nonatomic, readonly, nullable) TWTRVideoControlsViewSynchronizer *synchronizer;
