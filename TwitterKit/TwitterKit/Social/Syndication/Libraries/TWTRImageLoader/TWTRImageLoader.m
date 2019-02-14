@@ -17,12 +17,10 @@
 
 #import "TWTRImageLoader.h"
 #import <TwitterCore/TWTRAssertionMacros.h>
-#import <TwitterCore/TWTRErrorLogger.h>
 #import <TwitterShareExtensionUI/TWTRSEImageDownloader.h>
 #import "TWTRConstants_Private.h"
 #import "TWTRImageLoaderCache.h"
 #import "TWTRImageLoaderTaskManager.h"
-#import "TWTRScribeSink.h"
 #import "TWTRTwitter_Private.h"
 
 #define TWTRImageLoaderQueueName [NSString stringWithFormat:@"%@.image-loader.current-tasks", TWTRBundleID]
@@ -145,10 +143,7 @@
                                                  completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                                                      NSError *localizedError = [TWTRImageLoader localizedErrorFromResponse:response networkError:error];
                                                      if ([data length] == 0 || localizedError) {
-                                                         dispatch_async(dispatch_get_main_queue(), ^{
-                                                             [[TWTRTwitter sharedInstance].scribeSink didEncounterError:localizedError withMessage:@"Failed to load image."];
-                                                         });
-
+                                                         NSLog(@"[TwitterKit] Failed to load image. %@", localizedError);
                                                          completion(nil, localizedError);
                                                          return;
                                                      }

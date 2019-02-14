@@ -20,7 +20,6 @@
 #import <TwitterCore/TWTRAssertionMacros.h>
 #import <TwitterCore/TWTRAuthConfig.h>
 #import <TwitterCore/TWTRAuthenticationConstants.h>
-#import <TwitterCore/TWTRErrorLogger.h>
 #import <TwitterCore/TWTRSessionStore.h>
 #import <TwitterCore/TWTRSessionStore_Private.h>
 #import <TwitterCore/TWTRUserAPIClient.h>
@@ -30,21 +29,18 @@
 @interface TWTRWebAuthenticationTokenRequestor ()
 @property (nonatomic, readonly) TWTRUserAPIClient *APIClient;
 @property (nonatomic, readonly) id<TWTRAPIServiceConfig> serviceConfig;
-@property (nonatomic, readonly) id<TWTRErrorLogger> errorLogger;
 
 @end
 
 @implementation TWTRWebAuthenticationTokenRequestor
 
-- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig serviceConfig:(id<TWTRAPIServiceConfig>)serviceConfig errorLogger:(id<TWTRErrorLogger>)errorLogger
+- (instancetype)initWithAuthConfig:(TWTRAuthConfig *)authConfig serviceConfig:(id<TWTRAPIServiceConfig>)serviceConfig
 {
     TWTRParameterAssertOrReturnValue(authConfig, nil);
     TWTRParameterAssertOrReturnValue(serviceConfig, nil);
-    TWTRParameterAssertOrReturnValue(errorLogger, nil);
 
     self = [super init];
     if (self) {
-        _errorLogger = errorLogger;
         _serviceConfig = serviceConfig;
         _APIClient = [[TWTRUserAPIClient alloc] initWithAuthConfig:authConfig authToken:nil authTokenSecret:nil];
     }
@@ -115,7 +111,7 @@
     }
 
     NSError *unknownError = [self unknownLoginErrorWithMessage:errorDescription];
-    [self.errorLogger didEncounterError:unknownError withMessage:@"Error obtaining user auth token."];
+    NSLog(@"[TwitterKit] Error: Error obtaining user auth token. %@", unknownError);
 }
 
 - (NSError *)unknownLoginErrorWithMessage:(NSString *)message

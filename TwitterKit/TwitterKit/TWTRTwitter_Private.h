@@ -26,7 +26,6 @@
 
 @class TWTRAuthClient;
 @class TWTRScribeService;
-@class TWTRScribeSink;
 @class TWTRTweetRepository;
 @class TWTRUserSessionVerifier;
 @protocol TWTRAPIServiceConfig;
@@ -34,7 +33,6 @@
 @interface TWTRTwitter () <TWTRUserSessionVerifierDelegate>
 
 @property (nonatomic) NSDictionary *kitInfo;
-@property (nonatomic) TWTRScribeSink *scribeSink;
 @property (nonatomic, readonly) TWTRScribeService *scribeService;
 @property (nonatomic, readonly) TWTRUserSessionVerifier *userSessionVerifier;
 @property (nonatomic, readonly, getter=isInitialized) BOOL initialized;
@@ -58,9 +56,6 @@
  *  Only to be used for testing.
  */
 + (void)setSharedTwitter:(TWTRTwitter *)sharedTwitter;
-
-// Only Call this method from a unit test
-- (void)performWithScribeSink:(TWTRScribeSink *)sink action:(void (^)())action;
 
 - (void)userSessionVerifierNeedsSessionVerification:(TWTRUserSessionVerifier *)userSessionVerifier;
 
