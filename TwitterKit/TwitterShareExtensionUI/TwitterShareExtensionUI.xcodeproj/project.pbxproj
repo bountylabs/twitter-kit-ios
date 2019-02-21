@@ -653,10 +653,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFBE02841E245036007A246A /* Build configuration list for PBXNativeTarget "TwitterShareExtensionUI-static" */;
 			buildPhases = (
+				BFBE02861E2450AB007A246A /* Headers */,
 				BFBE02781E245036007A246A /* Sources */,
 				BFBE02791E245036007A246A /* Frameworks */,
 				BFBE027A1E245036007A246A /* CopyFiles */,
-				BFBE02861E2450AB007A246A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -672,9 +672,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFE960001DAC2E1B00638749 /* Build configuration list for PBXNativeTarget "TwitterShareExtensionUI" */;
 			buildPhases = (
+				BFE95FE91DAC2E1B00638749 /* Headers */,
 				BFE95FE71DAC2E1B00638749 /* Sources */,
 				BFE95FE81DAC2E1B00638749 /* Frameworks */,
-				BFE95FE91DAC2E1B00638749 /* Headers */,
 				BFE95FEA1DAC2E1B00638749 /* Resources */,
 			);
 			buildRules = (

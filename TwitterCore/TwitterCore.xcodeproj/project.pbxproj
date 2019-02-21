@@ -1338,9 +1338,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D5A92351AAA89730039EFCC /* Build configuration list for PBXNativeTarget "TwitterCore-static" */;
 			buildPhases = (
+				9D5A92681AAAA22C0039EFCC /* Headers */,
 				9D5A921D1AAA89730039EFCC /* Sources */,
 				9D5A921E1AAA89730039EFCC /* Frameworks */,
-				9D5A92681AAAA22C0039EFCC /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1374,9 +1374,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D5A92591AAA8D600039EFCC /* Build configuration list for PBXNativeTarget "TwitterCore" */;
 			buildPhases = (
+				9D5A92431AAA8D600039EFCC /* Headers */,
 				9D5A92411AAA8D600039EFCC /* Sources */,
 				9D5A92421AAA8D600039EFCC /* Frameworks */,
-				9D5A92431AAA8D600039EFCC /* Headers */,
 				9D5A92441AAA8D600039EFCC /* Resources */,
 			);
 			buildRules = (
