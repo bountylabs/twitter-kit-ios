@@ -28,7 +28,6 @@
 
 @property (nonatomic, copy) NSString *twitterKitURLScheme;
 @property (nonatomic, copy) NSString *twitterAuthURL;
-@property (nonatomic, copy) NSString *nonce;
 
 @end
 
@@ -38,14 +37,24 @@
 {
     if (self = [super init]) {
         self.twitterKitURLScheme = [NSString stringWithFormat:@"twitterkit-%@", config.consumerKey];
-        self.nonce = [self generateNonce];
-        if ([self.nonce length] > 0) {
-            self.twitterAuthURL = [NSString stringWithFormat:@"twitterauth://authorize?consumer_key=%@&consumer_secret=%@&oauth_callback=%@&identifier=%@", config.consumerKey, config.consumerSecret, self.twitterKitURLScheme, self.nonce];
-        } else {
-            self.twitterAuthURL = [NSString stringWithFormat:@"twitterauth://authorize?consumer_key=%@&consumer_secret=%@&oauth_callback=%@", config.consumerKey, config.consumerSecret, self.twitterKitURLScheme];
-        }
+        _nonce = [[self generateNonce] copy];
+        self.twitterAuthURL = [self.class authURLStringWithConsumerKey:config.consumerKey consumerSecret:config.consumerSecret twitterKitURLScheme:self.twitterKitURLScheme nonce:self.nonce];
     }
     return self;
+}
+
++ (NSString *)authURLStringWithConsumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret twitterKitURLScheme:(NSString *)twitterKitURLScheme nonce:(NSString *)nonce
+{
+    NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
+    parameters[@"consumer_key"] = consumerKey;
+    parameters[@"consumer_secret"] = consumerSecret;
+    parameters[@"oauth_callback"] = twitterKitURLScheme;
+    if (nonce.length > 0) {
+        parameters[@"identifier"] = nonce;
+    }
+
+    NSString *queryString = [TWTRNetworkingUtil queryStringFromParameters:parameters];
+    return [NSString stringWithFormat:@"twitterauth://authorize?%@", queryString];
 }
 
 #pragma mark - Public

@@ -31,6 +31,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (instancetype)initWithAuthConfig:(TWTRAuthConfig *)config;
 
+@property (nonatomic, readonly, copy) NSString *nonce;
+
 /*
  URL scheme used to redirect back to this app part-way through
  the OAuth authentication flow.
@@ -68,6 +70,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)isIdentifierVerifiedFromURL:(NSURL *)url;
 
 #pragma mark - Mobile SSO
+
++ (NSString *)authURLStringWithConsumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret twitterKitURLScheme:(NSString *)twitterKitURLScheme nonce:(NSString *)nonce;
 
 /*
  *  URL to redirect a user to the Twitter App for login.
