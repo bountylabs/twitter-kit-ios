@@ -22,6 +22,7 @@
 @interface TWTRMobileSSOTests : XCTestCase
 
 @property (nonatomic) TWTRMobileSSO *mobileSSO;
+@property (nonatomic) NSURL *successURL;
 @end
 
 @implementation TWTRMobileSSOTests
@@ -32,6 +33,9 @@
 
     TWTRAuthConfig *authConfig = [[TWTRAuthConfig alloc] initWithConsumerKey:@"xK8du" consumerSecret:@"s7r5p2"];
     self.mobileSSO = [[TWTRMobileSSO alloc] initWithAuthConfig:authConfig];
+
+    NSString *encodedNonce = [self.mobileSSO.loginURLParser.nonce stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.URLQueryAllowedCharacterSet];
+    self.successURL = [NSURL URLWithString:[@"twitterkit-xK8du://secret=RVfziSc&token=23698-mzYEJHqJ&username=fabric_tester&identifier=" stringByAppendingString:encodedNonce]];
 }
 
 #pragma mark - App Login
@@ -56,8 +60,7 @@
 
 - (void)testProcessURL_returnsYesForSuccess
 {
-    NSURL *successURL = [NSURL URLWithString:@"twitterkit-xK8du://secret=RVfziSc&token=23698-mzYEJHqJ&username=fabric_tester"];
-    XCTAssertTrue([self.mobileSSO processRedirectURL:successURL]);
+    XCTAssertTrue([self.mobileSSO processRedirectURL:self.successURL]);
 }
 
 - (void)testProcessURL_returnsYesForCancel
@@ -76,7 +79,6 @@
 
 - (void)testProcessURL_savesCorrectSession
 {
-    NSURL *successURL = [NSURL URLWithString:@"twitterkit-xK8du://secret=RVfziSc&token=23698-mzYEJHqJ&username=fabric_tester"];
     [[TWTRTwitter sharedInstance] startWithConsumerKey:@"xK8du" consumerSecret:@"s7r5p2"];
 
     XCTestExpectation *token = [self expectationWithDescription:@"Token is correct"];
@@ -90,7 +92,7 @@
             [secret fulfill];
         }
     };
-    [self.mobileSSO processRedirectURL:successURL];
+    [self.mobileSSO processRedirectURL:self.successURL];
 
     [self waitForExpectations:@[token, secret] timeout:0.5];
 }

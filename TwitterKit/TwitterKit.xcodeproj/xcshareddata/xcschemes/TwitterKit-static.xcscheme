@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1000"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BFE8395F1ADF23590035CBA1"
-               BuildableName = "TwitterKit.framework"
-               BlueprintName = "TwitterKit"
-               ReferencedContainer = "container:TwitterKit.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A966541318EB687000B61CEE"
-               BuildableName = "TwitterKitTests.xctest"
-               BlueprintName = "TwitterKit Tests"
+               BlueprintIdentifier = "A97654E418E0B29B00E25169"
+               BuildableName = "libTwitterKit.a"
+               BlueprintName = "TwitterKit-static"
                ReferencedContainer = "container:TwitterKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -56,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BFE8395F1ADF23590035CBA1"
-            BuildableName = "TwitterKit.framework"
-            BlueprintName = "TwitterKit"
+            BlueprintIdentifier = "A97654E418E0B29B00E25169"
+            BuildableName = "libTwitterKit.a"
+            BlueprintName = "TwitterKit-static"
             ReferencedContainer = "container:TwitterKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -78,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BFE8395F1ADF23590035CBA1"
-            BuildableName = "TwitterKit.framework"
-            BlueprintName = "TwitterKit"
+            BlueprintIdentifier = "A97654E418E0B29B00E25169"
+            BuildableName = "libTwitterKit.a"
+            BlueprintName = "TwitterKit-static"
             ReferencedContainer = "container:TwitterKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -96,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BFE8395F1ADF23590035CBA1"
-            BuildableName = "TwitterKit.framework"
-            BlueprintName = "TwitterKit"
+            BlueprintIdentifier = "A97654E418E0B29B00E25169"
+            BuildableName = "libTwitterKit.a"
+            BlueprintName = "TwitterKit-static"
             ReferencedContainer = "container:TwitterKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

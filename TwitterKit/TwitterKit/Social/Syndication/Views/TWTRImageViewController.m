@@ -21,7 +21,7 @@
 #import "TWTRImageScrollView.h"
 #import "TWTRTranslationsUtil.h"
 #import "TWTRTweetMediaEntity.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTwitter+Private.h"
 #import "TWTRViewUtil.h"
 
 @interface TWTRImageViewController ()

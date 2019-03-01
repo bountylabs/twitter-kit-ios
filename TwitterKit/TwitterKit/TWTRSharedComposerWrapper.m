@@ -30,7 +30,7 @@
 #import "TWTRLocalizedResources.h"
 #import "TWTRTwitter.h"
 #import "TWTRTwitterText.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTwitter+Private.h"
 #import "TWTRWordRange.h"
 
 NSArray *existingAccounts()

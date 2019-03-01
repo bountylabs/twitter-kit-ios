@@ -19,7 +19,7 @@
 #import <TwitterCore/TWTRAssertionMacros.h>
 #import "TWTRNotificationConstants.h"
 #import "TWTRTweet.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTwitter+Private.h"
 #import "TWTRUser.h"
 #import "TWTRVideoControlsView.h"
 #import "TWTRVideoMediaType.h"
@@ -27,7 +27,7 @@
 #import "TWTRVideoPlaybackRules.h"
 #import "TWTRVideoPlayerOutputView.h"
 #import "TWTRVideoPlayerView.h"
-#import "TWTRVideoViewController_Private.h"
+#import "TWTRVideoViewController+Private.h"
 #import "TWTRViewUtil.h"
 
 // TODO: What does this look like on iPad?

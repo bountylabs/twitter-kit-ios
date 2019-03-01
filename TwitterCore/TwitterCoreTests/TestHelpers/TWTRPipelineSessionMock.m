@@ -19,7 +19,7 @@
 #import <TwitterCore/TWTRGuestSession.h>
 #import <TwitterCore/TWTRSession.h>
 #import <TwitterCore/TWTRSessionStore.h>
-#import <TwitterCore/TWTRSessionStore_Private.h>
+#import <TwitterCore/TWTRSessionStore+Private.h>
 
 @implementation TWTRPipelineSessionMock
 

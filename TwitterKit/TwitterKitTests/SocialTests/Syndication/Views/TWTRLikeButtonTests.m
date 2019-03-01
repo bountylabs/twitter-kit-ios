@@ -17,7 +17,7 @@
 
 #import <OCMock/OCMock.h>
 #import "TWTRAPIClient.h"
-#import "TWTRAPIClient_Private.h"
+#import "TWTRAPIClient+Private.h"
 #import "TWTRFixtureLoader.h"
 #import "TWTRImages.h"
 #import "TWTRLikeButton.h"

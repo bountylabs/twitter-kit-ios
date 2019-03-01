@@ -23,9 +23,9 @@
 #import "TWTRVideoControlsView.h"
 #import "TWTRVideoPlaybackConfiguration.h"
 #import "TWTRVideoPlayerView.h"
-#import "TWTRVideoPlayerView_Private.h"
+#import "TWTRVideoPlayerView+Private.h"
 #import "TWTRVideoViewController.h"
-#import "TWTRVideoViewController_Private.h"
+#import "TWTRVideoViewController+Private.h"
 
 @interface TWTRVideoViewController ()
 

@@ -32,7 +32,7 @@
 #import "TWTRSessionFixtureLoader.h"
 #import "TWTRSessionRefreshStrategy.h"
 #import "TWTRSessionStore.h"
-#import "TWTRSessionStore_Private.h"
+#import "TWTRSessionStore+Private.h"
 #import "TWTRTestCase.h"
 #import "TWTRTestGuestSessionRefreshStrategy.h"
 

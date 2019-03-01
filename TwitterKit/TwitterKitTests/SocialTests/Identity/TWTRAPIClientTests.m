@@ -19,7 +19,7 @@
 #import <TwitterCore/TWTRAuthenticationConstants.h>
 #import <TwitterCore/TWTRNetworking.h>
 #import "TWTRAPIClient.h"
-#import "TWTRAPIClient_Private.h"
+#import "TWTRAPIClient+Private.h"
 #import "TWTRFixtureLoader.h"
 #import "TWTRImageTestHelper.h"
 #import "TWTRStubTwitterClient.h"

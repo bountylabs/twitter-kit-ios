@@ -19,7 +19,7 @@
 #import <XCTest/XCTest.h>
 #import "TWTRAuthConfig.h"
 #import "TWTRAuthConfigStore.h"
-#import "TWTRAuthConfigStore_Private.h"
+#import "TWTRAuthConfigStore+Private.h"
 #import "TWTRGenericKeychainItem.h"
 
 @interface TWTRAuthConfigStoreTests : XCTestCase

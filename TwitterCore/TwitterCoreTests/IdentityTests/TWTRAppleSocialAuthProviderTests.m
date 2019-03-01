@@ -24,7 +24,7 @@
 #import <TwitterCore/TWTRUtils.h>
 #import "TWTRAPIServiceConfig.h"
 #import "TWTRAppleSocialAuthenticaticationProvider.h"
-#import "TWTRAppleSocialAuthenticaticationProvider_Private.h"
+#import "TWTRAppleSocialAuthenticaticationProvider+Private.h"
 #import "TWTRSession.h"
 #import "TWTRTestCase.h"
 

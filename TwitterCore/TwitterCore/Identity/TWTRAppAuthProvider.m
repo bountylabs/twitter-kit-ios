@@ -20,7 +20,7 @@
 #import "TWTRAPIServiceConfig.h"
 #import "TWTRAuthConfig.h"
 #import "TWTRAuthenticationConstants.h"
-#import "TWTRAuthenticationProvider_Private.h"
+#import "TWTRAuthenticationProvider+Private.h"
 #import "TWTRNetworking.h"
 #import "TWTRNetworkingConstants.h"
 #import "TWTRUtils.h"

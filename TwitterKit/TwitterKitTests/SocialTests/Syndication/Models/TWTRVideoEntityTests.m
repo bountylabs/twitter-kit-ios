@@ -20,7 +20,7 @@
 #import "TWTRTweetCache.h"
 #import "TWTRTweetMediaEntity.h"
 #import "TWTRTweetRepository.h"
-#import "TWTRTweet_Private.h"
+#import "TWTRTweet+Private.h"
 #import "TWTRVideoMetaData.h"
 #import "TWTRVideoPlaybackConfiguration.h"
 

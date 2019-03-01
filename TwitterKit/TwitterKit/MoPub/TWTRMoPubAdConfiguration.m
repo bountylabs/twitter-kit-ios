@@ -21,7 +21,7 @@
 #import <MoPub/MPStaticNativeAdRenderer.h>
 #import <MoPub/MPStaticNativeAdRendererSettings.h>
 #import <TwitterCore/TWTRUtils.h>
-#import "TWTRMoPubAdConfiguration_Private.h"
+#import "TWTRMoPubAdConfiguration+Private.h"
 #import "TWTRMoPubNativeAdContainerView.h"
 
 // MoPub classes and variables

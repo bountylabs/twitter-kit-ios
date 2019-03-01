@@ -26,7 +26,7 @@
 #import "TWTRConstants.h"
 #import "TWTRDictUtil.h"
 #import "TWTRGuestAuthProvider.h"
-#import "TWTRGuestSession_Private.h"
+#import "TWTRGuestSession+Private.h"
 #import "TWTRSession.h"
 #import "TWTRTokenOnlyAuthSession.h"
 #import "TWTRUserAuthRequestSigner.h"

@@ -20,7 +20,7 @@
 #import "TWTRFixtureLoader.h"
 #import "TWTRMediaEntitySize.h"
 #import "TWTRTweetMediaEntity.h"
-#import "TWTRTweet_Private.h"
+#import "TWTRTweet+Private.h"
 
 @interface TWTRMediaEntitySizeTests : XCTestCase
 

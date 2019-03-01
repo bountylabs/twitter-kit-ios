@@ -9,8 +9,8 @@
 #import <TwitterCore/TWTRAPIServiceConfig.h>
 #import <TwitterCore/TWTRNetworking.h>
 #import <TwitterCore/TWTRSessionStore.h>
-#import <TwitterCore/TWTRSessionStore_Private.h>
-#import "TWTRAPIClient_Private.h"
+#import <TwitterCore/TWTRSessionStore+Private.h>
+#import "TWTRAPIClient+Private.h"
 #import "TWTRTestSessionStore.h"
 
 @implementation TWTRStubTwitterClient

@@ -17,7 +17,7 @@
 
 #import "TWTRImages.h"
 #import <TwitterCore/TWTRColorUtil.h>
-#import "TWTRConstants_Private.h"
+#import "TWTRConstants+Private.h"
 #import "TWTROSVersionInfo.h"
 #import "TWTRRuntime.h"
 

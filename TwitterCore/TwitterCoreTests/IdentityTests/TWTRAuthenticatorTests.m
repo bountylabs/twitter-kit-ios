@@ -18,9 +18,9 @@
 #import <OCMock/OCMock.h>
 #import "TWTRAuthenticationConstants.h"
 #import "TWTRAuthenticator.h"
-#import "TWTRAuthenticator_Private.h"
+#import "TWTRAuthenticator+Private.h"
 #import "TWTRKeychainWrapper.h"
-#import "TWTRKeychainWrapper_Private.h"
+#import "TWTRKeychainWrapper+Private.h"
 #import "TWTRTestCase.h"
 
 @interface TWTRAuthenticator ()

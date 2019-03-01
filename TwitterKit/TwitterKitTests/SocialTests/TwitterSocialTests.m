@@ -22,9 +22,9 @@
 #import <TwitterCore/TWTRGuestSession.h>
 #import <TwitterCore/TWTRSession.h>
 #import <TwitterCore/TWTRSessionStore.h>
-#import <TwitterCore/TWTRSessionStore_Private.h>
+#import <TwitterCore/TWTRSessionStore+Private.h>
 #import "TWTRAPIClient.h"
-#import "TWTRAPIClient_Private.h"
+#import "TWTRAPIClient+Private.h"
 #import "TWTRCookieStorageUtil.h"
 #import "TWTRFixtureLoader.h"
 #import "TWTRLoginURLParser.h"
@@ -35,7 +35,7 @@
 #import "TWTRStubTwitterClient.h"
 #import "TWTRTestCase.h"
 #import "TWTRTestSessionStore.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTwitter+Private.h"
 #import "TWTRUser.h"
 
 @interface TWTRTwitter ()

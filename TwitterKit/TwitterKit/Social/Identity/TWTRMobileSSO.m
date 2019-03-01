@@ -21,7 +21,7 @@
 #import "TWTRErrors.h"
 #import "TWTRLoginURLParser.h"
 #import "TWTRTwitter.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTwitter+Private.h"
 
 @implementation TWTRMobileSSO
 

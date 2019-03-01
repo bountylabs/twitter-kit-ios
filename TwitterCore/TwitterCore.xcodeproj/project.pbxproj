@@ -25,14 +25,14 @@
 		379A6D601E95B97300625984 /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 379A6D5A1E95B97300625984 /* metamacros.h */; };
 		3D1C730B1B5463E000F32CC9 /* TWTRAppAuthProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D56454F1ACE2DBC00633C16 /* TWTRAppAuthProvider.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3D1C730C1B5463E200F32CC9 /* TWTRAppAuthProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D56454F1ACE2DBC00633C16 /* TWTRAppAuthProvider.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3D1C730D1B5463ED00F32CC9 /* TWTRAppAuthProvider_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3E7CD71B1A35260042B1CC /* TWTRAppAuthProvider_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3D1C730D1B5463ED00F32CC9 /* TWTRAppAuthProvider+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3E7CD71B1A35260042B1CC /* TWTRAppAuthProvider+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3D1C730E1B5463F600F32CC9 /* TWTRAppAuthProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5645501ACE2DBC00633C16 /* TWTRAppAuthProvider.m */; };
-		3D5B0C7B1B9D3B670079A6F6 /* TWTRSession_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D5B0C7A1B9D3B670079A6F6 /* TWTRSession_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3D5B0C7D1B9D3D350079A6F6 /* TWTRSession_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D5B0C7A1B9D3B670079A6F6 /* TWTRSession_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3D761C901B605A5D00CCB795 /* TWTRSessionStore_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D761C8F1B605A5D00CCB795 /* TWTRSessionStore_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3D761C911B605A5D00CCB795 /* TWTRSessionStore_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D761C8F1B605A5D00CCB795 /* TWTRSessionStore_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3D761C931B6062B100CCB795 /* TWTRNetworkSessionProvider_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D761C921B6062B100CCB795 /* TWTRNetworkSessionProvider_Private.h */; };
-		3D761C941B6062B100CCB795 /* TWTRNetworkSessionProvider_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D761C921B6062B100CCB795 /* TWTRNetworkSessionProvider_Private.h */; };
+		3D5B0C7B1B9D3B670079A6F6 /* TWTRSession+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D5B0C7A1B9D3B670079A6F6 /* TWTRSession+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3D5B0C7D1B9D3D350079A6F6 /* TWTRSession+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D5B0C7A1B9D3B670079A6F6 /* TWTRSession+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3D761C901B605A5D00CCB795 /* TWTRSessionStore+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D761C8F1B605A5D00CCB795 /* TWTRSessionStore+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3D761C911B605A5D00CCB795 /* TWTRSessionStore+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D761C8F1B605A5D00CCB795 /* TWTRSessionStore+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3D761C931B6062B100CCB795 /* TWTRNetworkSessionProvider+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D761C921B6062B100CCB795 /* TWTRNetworkSessionProvider+Private.h */; };
+		3D761C941B6062B100CCB795 /* TWTRNetworkSessionProvider+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D761C921B6062B100CCB795 /* TWTRNetworkSessionProvider+Private.h */; };
 		3D98960D1B9621B600B9CABD /* TWTRTokenOnlyAuthSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D98960B1B9621B600B9CABD /* TWTRTokenOnlyAuthSession.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3D98960E1B9621B600B9CABD /* TWTRTokenOnlyAuthSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D98960C1B9621B600B9CABD /* TWTRTokenOnlyAuthSession.m */; };
 		3D98960F1B9621CF00B9CABD /* TWTRTokenOnlyAuthSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D98960B1B9621B600B9CABD /* TWTRTokenOnlyAuthSession.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -60,8 +60,8 @@
 		3DC730531B546DE100A0699A /* TWTRSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC7304C1B546DE100A0699A /* TWTRSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DC730541B546DE100A0699A /* TWTRSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC7304C1B546DE100A0699A /* TWTRSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DC730551B546DE100A0699A /* TWTRSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7304D1B546DE100A0699A /* TWTRSession.m */; };
-		3DC7305B1B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC730501B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider_Private.h */; };
-		3DC7305C1B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC730501B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider_Private.h */; };
+		3DC7305B1B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC730501B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider+Private.h */; };
+		3DC7305C1B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC730501B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider+Private.h */; };
 		3DC7305D1B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC730511B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3DC7305E1B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC730511B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3DC7305F1B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC730521B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider.m */; };
@@ -76,6 +76,8 @@
 		3DC7308D1B55BED300A0699A /* TWTRAppleSocialAuthProviderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7308C1B55BED300A0699A /* TWTRAppleSocialAuthProviderTests.m */; };
 		3DEEF7C21B7A769900A1B457 /* TWTRNetworkingConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D79FD101ABA6E2C009E5D38 /* TWTRNetworkingConstants.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3DEEF7C31B7A769A00A1B457 /* TWTRNetworkingConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D79FD101ABA6E2C009E5D38 /* TWTRNetworkingConstants.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		62C446962228C0D7003541E9 /* TWTRURLSessionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DBAFACB91B71748B0065B9B2 /* TWTRURLSessionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62C446972228C165003541E9 /* TWTRAppAuthProvider+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3E7CD71B1A35260042B1CC /* TWTRAppAuthProvider+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6C0DE2081C050E7700FC4CAC /* TWTRAPIDateSync.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C0DE2071C050D9500FC4CAC /* TWTRAPIDateSync.h */; };
 		6C0DE2091C050E7F00FC4CAC /* TWTRAPIDateSync.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C0DE2071C050D9500FC4CAC /* TWTRAPIDateSync.h */; };
 		6C0DE20B1C050FAF00FC4CAC /* TWTRAPIDateSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0DE20A1C050FAF00FC4CAC /* TWTRAPIDateSync.m */; };
@@ -110,11 +112,11 @@
 		6C9581F21AE1F7C0002981F8 /* TWTRColorUtilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9581E71AE1F7C0002981F8 /* TWTRColorUtilTests.m */; };
 		6C9581F71AE1F7C0002981F8 /* TWTRDateFormattersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9581EC1AE1F7C0002981F8 /* TWTRDateFormattersTests.m */; };
 		6C9581F81AE1F7C0002981F8 /* TWTRDateUtilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9581ED1AE1F7C0002981F8 /* TWTRDateUtilTests.m */; };
-		6C9581FD1AE1F864002981F8 /* TWTRDateFormatters_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C9581FC1AE1F864002981F8 /* TWTRDateFormatters_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		6C9581FE1AE1F868002981F8 /* TWTRDateFormatters_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C9581FC1AE1F864002981F8 /* TWTRDateFormatters_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6C9581FD1AE1F864002981F8 /* TWTRDateFormatters+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C9581FC1AE1F864002981F8 /* TWTRDateFormatters+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6C9581FE1AE1F868002981F8 /* TWTRDateFormatters+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C9581FC1AE1F864002981F8 /* TWTRDateFormatters+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6C9582001AE1F8F4002981F8 /* NSDictionary+TWTRAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9581FF1AE1F8F4002981F8 /* NSDictionary+TWTRAdditionsTests.m */; };
-		6C9582031AE20531002981F8 /* TWTRAuthenticationProvider_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C9582021AE2052D002981F8 /* TWTRAuthenticationProvider_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		6C9582041AE20532002981F8 /* TWTRAuthenticationProvider_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C9582021AE2052D002981F8 /* TWTRAuthenticationProvider_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6C9582031AE20531002981F8 /* TWTRAuthenticationProvider+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C9582021AE2052D002981F8 /* TWTRAuthenticationProvider+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6C9582041AE20532002981F8 /* TWTRAuthenticationProvider+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C9582021AE2052D002981F8 /* TWTRAuthenticationProvider+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6C9DF6C11BFE4CFE00C705B5 /* TWTRGCOAuthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9DF6C01BFE4CFE00C705B5 /* TWTRGCOAuthTests.m */; };
 		6CE57CC91AE068A300EA9C24 /* TWTRCoreOAuthSigning.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CE57CC71AE068A300EA9C24 /* TWTRCoreOAuthSigning.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CE57CCA1AE068A300EA9C24 /* TWTRCoreOAuthSigning.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CE57CC71AE068A300EA9C24 /* TWTRCoreOAuthSigning.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -237,14 +239,14 @@
 		AA0B5FD41F857EFC00B7D1DA /* TWTRSecItemWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0B5FD01F857E0900B7D1DA /* TWTRSecItemWrapper.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		AA0B5FD51F857F0000B7D1DA /* TWTRSecItemWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0B5FD01F857E0900B7D1DA /* TWTRSecItemWrapper.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		AA0B5FD61F857F0F00B7D1DA /* TWTRSecItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0B5FD11F857E0900B7D1DA /* TWTRSecItemWrapper.m */; };
-		AA684F7E1F900BA600C66F98 /* TWTRAuthenticator_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AA684F7D1F900BA600C66F98 /* TWTRAuthenticator_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		AA684F7F1F900BA600C66F98 /* TWTRAuthenticator_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AA684F7D1F900BA600C66F98 /* TWTRAuthenticator_Private.h */; };
-		AA684F811F900D1800C66F98 /* TWTRKeychainWrapper_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AA684F801F900D1800C66F98 /* TWTRKeychainWrapper_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		AA684F821F900D1800C66F98 /* TWTRKeychainWrapper_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AA684F801F900D1800C66F98 /* TWTRKeychainWrapper_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		AAAAF73C1F9E5128002F1991 /* TWTRAuthConfigSessionsValidator_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AAAAF73B1F9E510B002F1991 /* TWTRAuthConfigSessionsValidator_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		AAAAF73D1F9E5129002F1991 /* TWTRAuthConfigSessionsValidator_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AAAAF73B1F9E510B002F1991 /* TWTRAuthConfigSessionsValidator_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		AAAAF7491FA12F17002F1991 /* TWTRAuthConfigStore_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AAAAF7481FA12F17002F1991 /* TWTRAuthConfigStore_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		AAAAF74A1FA12F17002F1991 /* TWTRAuthConfigStore_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AAAAF7481FA12F17002F1991 /* TWTRAuthConfigStore_Private.h */; };
+		AA684F7E1F900BA600C66F98 /* TWTRAuthenticator+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AA684F7D1F900BA600C66F98 /* TWTRAuthenticator+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AA684F7F1F900BA600C66F98 /* TWTRAuthenticator+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AA684F7D1F900BA600C66F98 /* TWTRAuthenticator+Private.h */; };
+		AA684F811F900D1800C66F98 /* TWTRKeychainWrapper+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AA684F801F900D1800C66F98 /* TWTRKeychainWrapper+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AA684F821F900D1800C66F98 /* TWTRKeychainWrapper+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AA684F801F900D1800C66F98 /* TWTRKeychainWrapper+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AAAAF73C1F9E5128002F1991 /* TWTRAuthConfigSessionsValidator+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AAAAF73B1F9E510B002F1991 /* TWTRAuthConfigSessionsValidator+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AAAAF73D1F9E5129002F1991 /* TWTRAuthConfigSessionsValidator+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AAAAF73B1F9E510B002F1991 /* TWTRAuthConfigSessionsValidator+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AAAAF7491FA12F17002F1991 /* TWTRAuthConfigStore+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AAAAF7481FA12F17002F1991 /* TWTRAuthConfigStore+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AAAAF74A1FA12F17002F1991 /* TWTRAuthConfigStore+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AAAAF7481FA12F17002F1991 /* TWTRAuthConfigStore+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		BF318EB41ADF32990082353A /* TWTRMultiThreadUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D30C5A61ACE5EA000D0B1FA /* TWTRMultiThreadUtil.m */; };
 		BF8EF2C81AFD3E9F008B4829 /* TWTRCoreOAuthSigning+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8EF2C71AFD3E98008B4829 /* TWTRCoreOAuthSigning+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		BF8EF2C91AFD3E9F008B4829 /* TWTRCoreOAuthSigning+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8EF2C71AFD3E98008B4829 /* TWTRCoreOAuthSigning+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -270,7 +272,7 @@
 		DBADE6681BAB686000C838A5 /* TWTRMultipartFormDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = DBADE6661BAB686000C838A5 /* TWTRMultipartFormDocument.m */; };
 		DBADE66D1BAB6B0900C838A5 /* TWTRMultipartFormDocumentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBADE66C1BAB6B0900C838A5 /* TWTRMultipartFormDocumentTests.m */; };
 		DBADE66E1BAB7DE000C838A5 /* TWTRMultipartFormDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = DBADE6651BAB686000C838A5 /* TWTRMultipartFormDocument.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		DBAFACBB1B71748B0065B9B2 /* TWTRURLSessionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DBAFACB91B71748B0065B9B2 /* TWTRURLSessionDelegate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DBAFACBB1B71748B0065B9B2 /* TWTRURLSessionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DBAFACB91B71748B0065B9B2 /* TWTRURLSessionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBAFACBC1B71748B0065B9B2 /* TWTRURLSessionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAFACBA1B71748B0065B9B2 /* TWTRURLSessionDelegate.m */; };
 		DBAFACBE1B717FFC0065B9B2 /* TWTRURLSessionDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAFACBD1B717FFC0065B9B2 /* TWTRURLSessionDelegateTests.m */; };
 		DBB4945E1B4596DC00F08FA5 /* TWTRGenericKeychainItem.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB4945C1B4596DC00F08FA5 /* TWTRGenericKeychainItem.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -333,7 +335,7 @@
 		24AC14491BE7B219000029B5 /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Project.xcconfig; path = Config/Project.xcconfig; sourceTree = "<group>"; };
 		24AC144A1BE7B22D000029B5 /* libTwitterCore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = libTwitterCore.xcconfig; path = Config/libTwitterCore.xcconfig; sourceTree = "<group>"; };
 		24AC144B1BE7B62C000029B5 /* TwitterCoreTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = TwitterCoreTests.xcconfig; path = Config/TwitterCoreTests.xcconfig; sourceTree = "<group>"; };
-		24AC14551BE7C782000029B5 /* TWTRResourcesUtil_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWTRResourcesUtil_Private.h; sourceTree = "<group>"; };
+		24AC14551BE7C782000029B5 /* TWTRResourcesUtil+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TWTRResourcesUtil+Private.h"; sourceTree = "<group>"; };
 		371311A71AF19A0D009E0904 /* TWTRScribeEventTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRScribeEventTests.m; sourceTree = "<group>"; };
 		3713A5541AE9C6B70058AB33 /* TWTRAssertionMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRAssertionMacros.h; sourceTree = "<group>"; };
 		377783901E96B78A00BC4830 /* TWTRTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRTestCase.h; path = ../shared/TwitterTestFoundation/Base/TWTRTestCase.h; sourceTree = SOURCE_ROOT; };
@@ -348,9 +350,9 @@
 		379A6D581E95B97300625984 /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTKeyPathCoding.h; sourceTree = "<group>"; };
 		379A6D591E95B97300625984 /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		379A6D5A1E95B97300625984 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
-		3D5B0C7A1B9D3B670079A6F6 /* TWTRSession_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSession_Private.h; sourceTree = "<group>"; };
-		3D761C8F1B605A5D00CCB795 /* TWTRSessionStore_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRSessionStore_Private.h; path = V2/TWTRSessionStore_Private.h; sourceTree = "<group>"; };
-		3D761C921B6062B100CCB795 /* TWTRNetworkSessionProvider_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRNetworkSessionProvider_Private.h; sourceTree = "<group>"; };
+		3D5B0C7A1B9D3B670079A6F6 /* TWTRSession+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TWTRSession+Private.h"; sourceTree = "<group>"; };
+		3D761C8F1B605A5D00CCB795 /* TWTRSessionStore+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TWTRSessionStore+Private.h"; path = "V2/TWTRSessionStore+Private.h"; sourceTree = "<group>"; };
+		3D761C921B6062B100CCB795 /* TWTRNetworkSessionProvider+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TWTRNetworkSessionProvider+Private.h"; sourceTree = "<group>"; };
 		3D98960B1B9621B600B9CABD /* TWTRTokenOnlyAuthSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRTokenOnlyAuthSession.h; sourceTree = "<group>"; };
 		3D98960C1B9621B600B9CABD /* TWTRTokenOnlyAuthSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRTokenOnlyAuthSession.m; sourceTree = "<group>"; };
 		3DC730221B546CF700A0699A /* TWTRGuestAuthRequestSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRGuestAuthRequestSigner.h; path = V2/TWTRGuestAuthRequestSigner.h; sourceTree = "<group>"; };
@@ -367,7 +369,7 @@
 		3DC7302D1B546CF700A0699A /* TWTRUserAuthRequestSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRUserAuthRequestSigner.m; path = V2/TWTRUserAuthRequestSigner.m; sourceTree = "<group>"; };
 		3DC7304C1B546DE100A0699A /* TWTRSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSession.h; sourceTree = "<group>"; };
 		3DC7304D1B546DE100A0699A /* TWTRSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSession.m; sourceTree = "<group>"; };
-		3DC730501B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRAppleSocialAuthenticaticationProvider_Private.h; sourceTree = "<group>"; };
+		3DC730501B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TWTRAppleSocialAuthenticaticationProvider+Private.h"; sourceTree = "<group>"; };
 		3DC730511B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRAppleSocialAuthenticaticationProvider.h; sourceTree = "<group>"; };
 		3DC730521B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRAppleSocialAuthenticaticationProvider.m; sourceTree = "<group>"; };
 		3DC730731B558A3900A0699A /* TWTRAuthenticationTestUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRAuthenticationTestUtil.h; path = V2/TWTRAuthenticationTestUtil.h; sourceTree = "<group>"; };
@@ -417,9 +419,9 @@
 		6C9581E71AE1F7C0002981F8 /* TWTRColorUtilTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRColorUtilTests.m; sourceTree = "<group>"; };
 		6C9581EC1AE1F7C0002981F8 /* TWTRDateFormattersTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRDateFormattersTests.m; sourceTree = "<group>"; };
 		6C9581ED1AE1F7C0002981F8 /* TWTRDateUtilTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRDateUtilTests.m; sourceTree = "<group>"; };
-		6C9581FC1AE1F864002981F8 /* TWTRDateFormatters_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRDateFormatters_Private.h; sourceTree = "<group>"; };
+		6C9581FC1AE1F864002981F8 /* TWTRDateFormatters+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TWTRDateFormatters+Private.h"; sourceTree = "<group>"; };
 		6C9581FF1AE1F8F4002981F8 /* NSDictionary+TWTRAdditionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+TWTRAdditionsTests.m"; sourceTree = "<group>"; };
-		6C9582021AE2052D002981F8 /* TWTRAuthenticationProvider_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRAuthenticationProvider_Private.h; sourceTree = "<group>"; };
+		6C9582021AE2052D002981F8 /* TWTRAuthenticationProvider+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TWTRAuthenticationProvider+Private.h"; sourceTree = "<group>"; };
 		6C9DF6C01BFE4CFE00C705B5 /* TWTRGCOAuthTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRGCOAuthTests.m; path = ThirdParty/TWTRGCOAuthTests.m; sourceTree = "<group>"; };
 		6CE57CC71AE068A300EA9C24 /* TWTRCoreOAuthSigning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRCoreOAuthSigning.h; sourceTree = "<group>"; };
 		6CE57CC81AE068A300EA9C24 /* TWTRCoreOAuthSigning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRCoreOAuthSigning.m; sourceTree = "<group>"; };
@@ -452,7 +454,7 @@
 		9D30C5CC1ACE60E200D0B1FA /* TWTRIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRIdentifier.h; sourceTree = "<group>"; };
 		9D30C5CD1ACE60E200D0B1FA /* TWTRIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRIdentifier.m; sourceTree = "<group>"; };
 		9D348B411AAFE73B007837FB /* TwitterCore-ios-module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "TwitterCore-ios-module.modulemap"; sourceTree = "<group>"; };
-		9D3E7CD71B1A35260042B1CC /* TWTRAppAuthProvider_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRAppAuthProvider_Private.h; sourceTree = "<group>"; };
+		9D3E7CD71B1A35260042B1CC /* TWTRAppAuthProvider+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TWTRAppAuthProvider+Private.h"; sourceTree = "<group>"; };
 		9D4545431AB0D3C800730817 /* TwitterCore-module.private.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "TwitterCore-module.private.modulemap"; sourceTree = "<group>"; };
 		9D4545471AB23B6200730817 /* TwitterCore-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwitterCore-Info.plist"; sourceTree = "<group>"; };
 		9D56452B1ACE2C1300633C16 /* TWTRAuthenticationConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRAuthenticationConstants.h; sourceTree = "<group>"; };
@@ -512,10 +514,10 @@
 		9DF52D9F1ABB6B1F004345D0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		AA0B5FD01F857E0900B7D1DA /* TWTRSecItemWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWTRSecItemWrapper.h; sourceTree = "<group>"; };
 		AA0B5FD11F857E0900B7D1DA /* TWTRSecItemWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWTRSecItemWrapper.m; sourceTree = "<group>"; };
-		AA684F7D1F900BA600C66F98 /* TWTRAuthenticator_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWTRAuthenticator_Private.h; sourceTree = "<group>"; };
-		AA684F801F900D1800C66F98 /* TWTRKeychainWrapper_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWTRKeychainWrapper_Private.h; sourceTree = "<group>"; };
-		AAAAF73B1F9E510B002F1991 /* TWTRAuthConfigSessionsValidator_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWTRAuthConfigSessionsValidator_Private.h; sourceTree = "<group>"; };
-		AAAAF7481FA12F17002F1991 /* TWTRAuthConfigStore_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWTRAuthConfigStore_Private.h; sourceTree = "<group>"; };
+		AA684F7D1F900BA600C66F98 /* TWTRAuthenticator+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TWTRAuthenticator+Private.h"; sourceTree = "<group>"; };
+		AA684F801F900D1800C66F98 /* TWTRKeychainWrapper+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TWTRKeychainWrapper+Private.h"; sourceTree = "<group>"; };
+		AAAAF73B1F9E510B002F1991 /* TWTRAuthConfigSessionsValidator+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TWTRAuthConfigSessionsValidator+Private.h"; sourceTree = "<group>"; };
+		AAAAF7481FA12F17002F1991 /* TWTRAuthConfigStore+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TWTRAuthConfigStore+Private.h"; sourceTree = "<group>"; };
 		AAAE73BE1FB380BC005BEEAD /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTKeyPathCoding.h; sourceTree = "<group>"; };
 		AAAE73BF1FB380BC005BEEAD /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		AAAE73C01FB380BC005BEEAD /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
@@ -529,7 +531,7 @@
 		DB8526C11B83D50600C06CB9 /* TWTRAPIServiceConfigRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRAPIServiceConfigRegistry.h; sourceTree = "<group>"; };
 		DB8526C21B83D50600C06CB9 /* TWTRAPIServiceConfigRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRAPIServiceConfigRegistry.m; sourceTree = "<group>"; };
 		DB8526C71B83E20100C06CB9 /* TWTRAPIServiceConfigRegistryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRAPIServiceConfigRegistryTests.m; sourceTree = "<group>"; };
-		DB863D8D1C90D37C0069930E /* TWTRGuestSession_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWTRGuestSession_Private.h; sourceTree = "<group>"; };
+		DB863D8D1C90D37C0069930E /* TWTRGuestSession+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TWTRGuestSession+Private.h"; sourceTree = "<group>"; };
 		DB925F931BC6D5F200E85BA6 /* TWTRAuthConfigStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRAuthConfigStore.h; sourceTree = "<group>"; };
 		DB925F941BC6D5F200E85BA6 /* TWTRAuthConfigStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRAuthConfigStore.m; sourceTree = "<group>"; };
 		DB9313C41B58295300D8375A /* TWTRGuestSessionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRGuestSessionTests.m; sourceTree = "<group>"; };
@@ -680,22 +682,22 @@
 		3D1C73131B546C5D00F32CC9 /* V2 */ = {
 			isa = PBXGroup;
 			children = (
-				3DC730501B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider_Private.h */,
+				3DC730501B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider+Private.h */,
 				3DC730511B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider.h */,
 				3DC730521B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider.m */,
 				3DC730221B546CF700A0699A /* TWTRGuestAuthRequestSigner.h */,
 				3DC730231B546CF700A0699A /* TWTRGuestAuthRequestSigner.m */,
-				3D761C921B6062B100CCB795 /* TWTRNetworkSessionProvider_Private.h */,
+				3D761C921B6062B100CCB795 /* TWTRNetworkSessionProvider+Private.h */,
 				3DC730241B546CF700A0699A /* TWTRNetworkSessionProvider.h */,
 				3DC730251B546CF700A0699A /* TWTRNetworkSessionProvider.m */,
 				3DC730261B546CF700A0699A /* TWTROAuth1aAuthRequestSigner.h */,
 				3DC730271B546CF700A0699A /* TWTROAuth1aRequestSigner.m */,
-				3D5B0C7A1B9D3B670079A6F6 /* TWTRSession_Private.h */,
+				3D5B0C7A1B9D3B670079A6F6 /* TWTRSession+Private.h */,
 				3DC7304C1B546DE100A0699A /* TWTRSession.h */,
 				3DC7304D1B546DE100A0699A /* TWTRSession.m */,
 				3DC730281B546CF700A0699A /* TWTRSessionRefreshStrategy.h */,
 				3DC730291B546CF700A0699A /* TWTRSessionRefreshStrategy.m */,
-				3D761C8F1B605A5D00CCB795 /* TWTRSessionStore_Private.h */,
+				3D761C8F1B605A5D00CCB795 /* TWTRSessionStore+Private.h */,
 				3DC7302A1B546CF700A0699A /* TWTRSessionStore.h */,
 				3DC7302B1B546CF700A0699A /* TWTRSessionStore.m */,
 				3DC7302C1B546CF700A0699A /* TWTRUserAuthRequestSigner.h */,
@@ -964,11 +966,11 @@
 				9D56453D1ACE2D4100633C16 /* TWTRAuthConfig.h */,
 				9D56453E1ACE2D4100633C16 /* TWTRAuthConfig.m */,
 				DB925F931BC6D5F200E85BA6 /* TWTRAuthConfigStore.h */,
-				AAAAF7481FA12F17002F1991 /* TWTRAuthConfigStore_Private.h */,
+				AAAAF7481FA12F17002F1991 /* TWTRAuthConfigStore+Private.h */,
 				DB925F941BC6D5F200E85BA6 /* TWTRAuthConfigStore.m */,
 				DB19EEE51BC705C100C7D031 /* TWTRAuthConfigSessionsValidator.h */,
 				DB19EEE61BC705C100C7D031 /* TWTRAuthConfigSessionsValidator.m */,
-				AAAAF73B1F9E510B002F1991 /* TWTRAuthConfigSessionsValidator_Private.h */,
+				AAAAF73B1F9E510B002F1991 /* TWTRAuthConfigSessionsValidator+Private.h */,
 				9D79FD081ABA6A94009E5D38 /* TWTRAuthSession.h */,
 				9D5645551ACE2DDD00633C16 /* TWTRNetworking.h */,
 				9D5645561ACE2DDD00633C16 /* TWTRNetworking.m */,
@@ -989,16 +991,16 @@
 		9D79FD161ABA6F1D009E5D38 /* Identity */ = {
 			isa = PBXGroup;
 			children = (
-				9D3E7CD71B1A35260042B1CC /* TWTRAppAuthProvider_Private.h */,
+				9D3E7CD71B1A35260042B1CC /* TWTRAppAuthProvider+Private.h */,
 				9D56454F1ACE2DBC00633C16 /* TWTRAppAuthProvider.h */,
 				9D5645501ACE2DBC00633C16 /* TWTRAppAuthProvider.m */,
 				9D56452B1ACE2C1300633C16 /* TWTRAuthenticationConstants.h */,
 				9D56452C1ACE2C1300633C16 /* TWTRAuthenticationConstants.m */,
-				6C9582021AE2052D002981F8 /* TWTRAuthenticationProvider_Private.h */,
+				6C9582021AE2052D002981F8 /* TWTRAuthenticationProvider+Private.h */,
 				9D5645671ACE2E4200633C16 /* TWTRAuthenticationProvider.h */,
 				9D5645681ACE2E4200633C16 /* TWTRAuthenticationProvider.m */,
 				9D56456D1ACE2F3100633C16 /* TWTRAuthenticator.h */,
-				AA684F7D1F900BA600C66F98 /* TWTRAuthenticator_Private.h */,
+				AA684F7D1F900BA600C66F98 /* TWTRAuthenticator+Private.h */,
 				9D56456E1ACE2F3100633C16 /* TWTRAuthenticator.m */,
 				6CE57CC71AE068A300EA9C24 /* TWTRCoreOAuthSigning.h */,
 				6CE57CC81AE068A300EA9C24 /* TWTRCoreOAuthSigning.m */,
@@ -1009,7 +1011,7 @@
 				9D5645441ACE2D7100633C16 /* TWTRGuestAuthProvider.m */,
 				9D5645371ACE2C6600633C16 /* TWTRGuestSession.h */,
 				9D5645381ACE2C6600633C16 /* TWTRGuestSession.m */,
-				DB863D8D1C90D37C0069930E /* TWTRGuestSession_Private.h */,
+				DB863D8D1C90D37C0069930E /* TWTRGuestSession+Private.h */,
 				DB0908971B6057B000FE4CD3 /* TWTRSessionMigrating.h */,
 				3D98960B1B9621B600B9CABD /* TWTRTokenOnlyAuthSession.h */,
 				3D98960C1B9621B600B9CABD /* TWTRTokenOnlyAuthSession.m */,
@@ -1029,7 +1031,7 @@
 				9DBB704F1ABB76BB00ED4051 /* TWTRResourcesUtil.m */,
 				6C37A1C81B22505900C360B4 /* TWTRCoreLanguage.h */,
 				6C37A1C51B22502B00C360B4 /* TWTRCoreLanguage.m */,
-				24AC14551BE7C782000029B5 /* TWTRResourcesUtil_Private.h */,
+				24AC14551BE7C782000029B5 /* TWTRResourcesUtil+Private.h */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1050,7 +1052,7 @@
 				9DF52D991ABB67F6004345D0 /* TWTRColorUtil.h */,
 				9DF52D9A1ABB67F6004345D0 /* TWTRColorUtil.m */,
 				9D0AE5BA1AC7413000884B45 /* TWTRDateFormatters.h */,
-				6C9581FC1AE1F864002981F8 /* TWTRDateFormatters_Private.h */,
+				6C9581FC1AE1F864002981F8 /* TWTRDateFormatters+Private.h */,
 				9D0AE5BB1AC7413000884B45 /* TWTRDateFormatters.m */,
 				9D0AE5B41AC7400500884B45 /* TWTRDateUtil.h */,
 				9D0AE5B51AC7400500884B45 /* TWTRDateUtil.m */,
@@ -1059,7 +1061,7 @@
 				9D5645731ACE2FEF00633C16 /* TWTRFileManager.h */,
 				9D5645741ACE2FEF00633C16 /* TWTRFileManager.m */,
 				9DF52D681ABA9576004345D0 /* TWTRKeychainWrapper.h */,
-				AA684F801F900D1800C66F98 /* TWTRKeychainWrapper_Private.h */,
+				AA684F801F900D1800C66F98 /* TWTRKeychainWrapper+Private.h */,
 				9DF52D691ABA9576004345D0 /* TWTRKeychainWrapper.m */,
 				9D30C5A51ACE5EA000D0B1FA /* TWTRMultiThreadUtil.h */,
 				9D30C5A61ACE5EA000D0B1FA /* TWTRMultiThreadUtil.m */,
@@ -1165,7 +1167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D56455E1ACE2DF600633C16 /* TWTRCoreConstants.h in Headers */,
-				3D761C911B605A5D00CCB795 /* TWTRSessionStore_Private.h in Headers */,
+				3D761C911B605A5D00CCB795 /* TWTRSessionStore+Private.h in Headers */,
 				9D56454C1ACE2D8900633C16 /* TWTRAppAPIClient.h in Headers */,
 				3D9DA37E1C405FE600034D2A /* TWTRAuthenticationConstants.h in Headers */,
 				DBC0F08B1B55C175006B6BB6 /* TWTRNetworkingPipeline.h in Headers */,
@@ -1175,7 +1177,7 @@
 				DB19EEE91BC705DA00C7D031 /* TWTRAuthConfigSessionsValidator.h in Headers */,
 				9D30C55A1ACE318C00D0B1FA /* TWTRAPINetworkErrorsShim.h in Headers */,
 				9D30C56D1ACE339900D0B1FA /* TWTRGCOAuth.h in Headers */,
-				AAAAF74A1FA12F17002F1991 /* TWTRAuthConfigStore_Private.h in Headers */,
+				AAAAF74A1FA12F17002F1991 /* TWTRAuthConfigStore+Private.h in Headers */,
 				9D30C5661ACE336D00D0B1FA /* TWTRUserAPIClient.h in Headers */,
 				6C0DE2091C050E7F00FC4CAC /* TWTRAPIDateSync.h in Headers */,
 				9DF52D651ABA9335004345D0 /* TWTRAPIConstants.h in Headers */,
@@ -1202,25 +1204,27 @@
 				3DC730541B546DE100A0699A /* TWTRSession.h in Headers */,
 				DB963DE91C9770C50011943A /* TWTRDefines.h in Headers */,
 				3DC7303B1B546CF700A0699A /* TWTRSessionRefreshStrategy.h in Headers */,
-				6C9581FE1AE1F868002981F8 /* TWTRDateFormatters_Private.h in Headers */,
+				6C9581FE1AE1F868002981F8 /* TWTRDateFormatters+Private.h in Headers */,
 				6C3998E31AE863EC00870DB5 /* TWTRAPIServiceConfig.h in Headers */,
 				9D0AE5BD1AC7413000884B45 /* TWTRDateFormatters.h in Headers */,
 				6CE57CCA1AE068A300EA9C24 /* TWTRCoreOAuthSigning.h in Headers */,
 				9D30C5501ACE316E00D0B1FA /* TWTRServerTrustEvaluator.h in Headers */,
 				9D5645401ACE2D4100633C16 /* TWTRAuthConfig.h in Headers */,
-				6C9582041AE20532002981F8 /* TWTRAuthenticationProvider_Private.h in Headers */,
-				AAAAF73C1F9E5128002F1991 /* TWTRAuthConfigSessionsValidator_Private.h in Headers */,
+				62C446972228C165003541E9 /* TWTRAppAuthProvider+Private.h in Headers */,
+				6C9582041AE20532002981F8 /* TWTRAuthenticationProvider+Private.h in Headers */,
+				AAAAF73C1F9E5128002F1991 /* TWTRAuthConfigSessionsValidator+Private.h in Headers */,
 				DBEEBCD01B617A7000DE872D /* TWTRGenericKeychainItem.h in Headers */,
 				3DC7305E1B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider.h in Headers */,
 				373F51531E9FE97400B37C86 /* TWTRNetworkingUtil.h in Headers */,
 				9D5645761ACE2FEF00633C16 /* TWTRFileManager.h in Headers */,
 				9D5A924B1AAA8D600039EFCC /* TwitterCore.h in Headers */,
 				3DC730431B546CF700A0699A /* TWTRUserAuthRequestSigner.h in Headers */,
+				62C446962228C0D7003541E9 /* TWTRURLSessionDelegate.h in Headers */,
 				3DC7303F1B546CF700A0699A /* TWTRSessionStore.h in Headers */,
 				9DF52D951ABB58DE004345D0 /* TWTRAPIErrorCode.h in Headers */,
 				3DC730371B546CF700A0699A /* TWTROAuth1aAuthRequestSigner.h in Headers */,
 				9DDE98021B18EBF4006F3FFC /* TWTRConstants.h in Headers */,
-				AA684F821F900D1800C66F98 /* TWTRKeychainWrapper_Private.h in Headers */,
+				AA684F821F900D1800C66F98 /* TWTRKeychainWrapper+Private.h in Headers */,
 				9D56453A1ACE2C6600633C16 /* TWTRGuestSession.h in Headers */,
 				AA0B5FD51F857F0000B7D1DA /* TWTRSecItemWrapper.h in Headers */,
 				9D5645461ACE2D7100633C16 /* TWTRGuestAuthProvider.h in Headers */,
@@ -1229,15 +1233,15 @@
 				9D79FD0A1ABA6A94009E5D38 /* TWTRAuthSession.h in Headers */,
 				9DF52D6B1ABA9576004345D0 /* TWTRKeychainWrapper.h in Headers */,
 				9D56456A1ACE2E4200633C16 /* TWTRAuthenticationProvider.h in Headers */,
-				3DC7305C1B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider_Private.h in Headers */,
+				3DC7305C1B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider+Private.h in Headers */,
 				9DA224771B30F22E00743222 /* TwitterAppAPIClient+Subclasses.h in Headers */,
 				DBEEBCCE1B61549F00DE872D /* TWTRSessionMigrating.h in Headers */,
 				9D30C5541ACE316E00D0B1FA /* TWTRX509Certificate.h in Headers */,
 				9DF52D5F1ABA911A004345D0 /* TWTRUtils.h in Headers */,
-				3D761C941B6062B100CCB795 /* TWTRNetworkSessionProvider_Private.h in Headers */,
-				3D5B0C7D1B9D3D350079A6F6 /* TWTRSession_Private.h in Headers */,
+				3D761C941B6062B100CCB795 /* TWTRNetworkSessionProvider+Private.h in Headers */,
+				3D5B0C7D1B9D3D350079A6F6 /* TWTRSession+Private.h in Headers */,
 				379A6D601E95B97300625984 /* metamacros.h in Headers */,
-				AA684F7F1F900BA600C66F98 /* TWTRAuthenticator_Private.h in Headers */,
+				AA684F7F1F900BA600C66F98 /* TWTRAuthenticator+Private.h in Headers */,
 				3DC7302F1B546CF700A0699A /* TWTRGuestAuthRequestSigner.h in Headers */,
 				9D30C5731ACE355B00D0B1FA /* TWTRDictUtil.h in Headers */,
 				DBC0F08E1B55C1AB006B6BB6 /* TWTRRequestSigningOperation.h in Headers */,
@@ -1252,16 +1256,16 @@
 				3DC7303E1B546CF700A0699A /* TWTRSessionStore.h in Headers */,
 				DB19EEE71BC705C100C7D031 /* TWTRAuthConfigSessionsValidator.h in Headers */,
 				3DC730321B546CF700A0699A /* TWTRNetworkSessionProvider.h in Headers */,
-				3D1C730D1B5463ED00F32CC9 /* TWTRAppAuthProvider_Private.h in Headers */,
+				3D1C730D1B5463ED00F32CC9 /* TWTRAppAuthProvider+Private.h in Headers */,
 				BFE838C01ADDE1B80035CBA1 /* TwitterCore.h in Headers */,
 				DBADE6671BAB686000C838A5 /* TWTRMultipartFormDocument.h in Headers */,
 				3D1C730B1B5463E000F32CC9 /* TWTRAppAuthProvider.h in Headers */,
 				9D79FD1A1ABA6FCE009E5D38 /* TWTRUtils.h in Headers */,
 				3D9FB9F81BBDFC57006E7919 /* TwitterCore-Prefix.pch in Headers */,
-				AA684F811F900D1800C66F98 /* TWTRKeychainWrapper_Private.h in Headers */,
+				AA684F811F900D1800C66F98 /* TWTRKeychainWrapper+Private.h in Headers */,
 				9D30C54F1ACE316E00D0B1FA /* TWTRServerTrustEvaluator.h in Headers */,
 				9DF52D9B1ABB67F6004345D0 /* TWTRColorUtil.h in Headers */,
-				3DC7305B1B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider_Private.h in Headers */,
+				3DC7305B1B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider+Private.h in Headers */,
 				AA0B5FD41F857EFC00B7D1DA /* TWTRSecItemWrapper.h in Headers */,
 				9D79FD091ABA6A94009E5D38 /* TWTRAuthSession.h in Headers */,
 				3713A5551AE9C6B70058AB33 /* TWTRAssertionMacros.h in Headers */,
@@ -1283,16 +1287,16 @@
 				9D5645451ACE2D7100633C16 /* TWTRGuestAuthProvider.h in Headers */,
 				DBC0F0831B55C161006B6BB6 /* TWTRNetworkingPipeline.h in Headers */,
 				9D5645691ACE2E4200633C16 /* TWTRAuthenticationProvider.h in Headers */,
-				3D761C901B605A5D00CCB795 /* TWTRSessionStore_Private.h in Headers */,
-				6C9581FD1AE1F864002981F8 /* TWTRDateFormatters_Private.h in Headers */,
-				AAAAF73D1F9E5129002F1991 /* TWTRAuthConfigSessionsValidator_Private.h in Headers */,
+				3D761C901B605A5D00CCB795 /* TWTRSessionStore+Private.h in Headers */,
+				6C9581FD1AE1F864002981F8 /* TWTRDateFormatters+Private.h in Headers */,
+				AAAAF73D1F9E5129002F1991 /* TWTRAuthConfigSessionsValidator+Private.h in Headers */,
 				6C3998E21AE863EC00870DB5 /* TWTRAPIServiceConfig.h in Headers */,
 				3DC7303A1B546CF700A0699A /* TWTRSessionRefreshStrategy.h in Headers */,
 				9D30C56C1ACE339900D0B1FA /* TWTRGCOAuth.h in Headers */,
 				9D30C5A71ACE5EA000D0B1FA /* TWTRMultiThreadUtil.h in Headers */,
 				6CE57CC91AE068A300EA9C24 /* TWTRCoreOAuthSigning.h in Headers */,
 				9DF52D941ABB58DE004345D0 /* TWTRAPIErrorCode.h in Headers */,
-				6C9582031AE20531002981F8 /* TWTRAuthenticationProvider_Private.h in Headers */,
+				6C9582031AE20531002981F8 /* TWTRAuthenticationProvider+Private.h in Headers */,
 				9D0AE5BC1AC7413000884B45 /* TWTRDateFormatters.h in Headers */,
 				3D98960D1B9621B600B9CABD /* TWTRTokenOnlyAuthSession.h in Headers */,
 				9D56454B1ACE2D8900633C16 /* TWTRAppAPIClient.h in Headers */,
@@ -1306,15 +1310,15 @@
 				9DA224761B30F22E00743222 /* TwitterAppAPIClient+Subclasses.h in Headers */,
 				3DC7302E1B546CF700A0699A /* TWTRGuestAuthRequestSigner.h in Headers */,
 				3DEEF7C21B7A769900A1B457 /* TWTRNetworkingConstants.h in Headers */,
-				3D5B0C7B1B9D3B670079A6F6 /* TWTRSession_Private.h in Headers */,
+				3D5B0C7B1B9D3B670079A6F6 /* TWTRSession+Private.h in Headers */,
 				DB925F951BC6D5F200E85BA6 /* TWTRAuthConfigStore.h in Headers */,
-				3D761C931B6062B100CCB795 /* TWTRNetworkSessionProvider_Private.h in Headers */,
+				3D761C931B6062B100CCB795 /* TWTRNetworkSessionProvider+Private.h in Headers */,
 				DB0908981B6057B000FE4CD3 /* TWTRSessionMigrating.h in Headers */,
 				9D30C5531ACE316E00D0B1FA /* TWTRX509Certificate.h in Headers */,
 				9D56455D1ACE2DF600633C16 /* TWTRCoreConstants.h in Headers */,
 				9D5645631ACE2E1D00633C16 /* TWTRNetworkingUtil.h in Headers */,
 				3DC730531B546DE100A0699A /* TWTRSession.h in Headers */,
-				AA684F7E1F900BA600C66F98 /* TWTRAuthenticator_Private.h in Headers */,
+				AA684F7E1F900BA600C66F98 /* TWTRAuthenticator+Private.h in Headers */,
 				DB8526C31B83D50600C06CB9 /* TWTRAPIServiceConfigRegistry.h in Headers */,
 				9DF52D641ABA9335004345D0 /* TWTRAPIConstants.h in Headers */,
 				9D5645751ACE2FEF00633C16 /* TWTRFileManager.h in Headers */,
@@ -1323,7 +1327,7 @@
 				379A6D5F1E95B97300625984 /* metamacros.h in Headers */,
 				3DC7305D1B546DE100A0699A /* TWTRAppleSocialAuthenticaticationProvider.h in Headers */,
 				9DF52D6A1ABA9576004345D0 /* TWTRKeychainWrapper.h in Headers */,
-				AAAAF7491FA12F17002F1991 /* TWTRAuthConfigStore_Private.h in Headers */,
+				AAAAF7491FA12F17002F1991 /* TWTRAuthConfigStore+Private.h in Headers */,
 				3D9DA37D1C405FE200034D2A /* TWTRAuthenticationConstants.h in Headers */,
 				3DC730361B546CF700A0699A /* TWTROAuth1aAuthRequestSigner.h in Headers */,
 				DBAFACBB1B71748B0065B9B2 /* TWTRURLSessionDelegate.h in Headers */,

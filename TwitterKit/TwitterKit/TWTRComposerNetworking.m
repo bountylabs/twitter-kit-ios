@@ -20,7 +20,7 @@
 #import "TWTRAPIClient.h"
 #import "TWTRComposerAccount.h"
 #import "TWTRComposerUser.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTwitter+Private.h"
 
 @interface TWTRComposerNetworking ()
 

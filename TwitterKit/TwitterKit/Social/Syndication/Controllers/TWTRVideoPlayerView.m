@@ -20,7 +20,7 @@
 #import <TwitterCore/TWTRAssertionMacros.h>
 
 #import "TWTRTweet.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTwitter+Private.h"
 #import "TWTRUser.h"
 #import "TWTRVideoCTAView.h"
 #import "TWTRVideoControlsView.h"
@@ -29,7 +29,7 @@
 #import "TWTRVideoPlaybackConfiguration.h"
 #import "TWTRVideoPlaybackRules.h"
 #import "TWTRVideoPlayerOutputView.h"
-#import "TWTRVideoPlayerView_Private.h"
+#import "TWTRVideoPlayerView+Private.h"
 #import "TWTRViewUtil.h"
 
 NS_ASSUME_NONNULL_BEGIN

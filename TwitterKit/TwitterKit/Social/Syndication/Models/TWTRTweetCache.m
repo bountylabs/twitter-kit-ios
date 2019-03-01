@@ -19,7 +19,7 @@
 
 #import "TWTRPersistentStore.h"
 #import "TWTRTweet.h"
-#import "TWTRTweet_Private.h"
+#import "TWTRTweet+Private.h"
 #import "TWTRVersionedCacheable.h"
 
 @implementation TWTRTweetCache

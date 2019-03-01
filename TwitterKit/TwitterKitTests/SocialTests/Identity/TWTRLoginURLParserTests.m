@@ -34,6 +34,15 @@
     self.loginURLParser = [[TWTRLoginURLParser alloc] initWithAuthConfig:authConfig];
 }
 
+#pragma mark - Auth URL
+
+- (void)test_authURL_escapesQueryParameters
+{
+    // Note: URL schemes don't support escape sequences.
+    NSString *authURL = [TWTRLoginURLParser authURLStringWithConsumerKey:@"abc+123" consumerSecret:@"xyz+/456" twitterKitURLScheme:@"twitter-vfr" nonce:@"tuv+123/?lmo"];
+    XCTAssertEqualObjects(authURL, @"twitterauth://authorize?consumer_key=abc%2B123&consumer_secret=xyz%2B%2F456&identifier=tuv%2B123%2F%3Flmo&oauth_callback=twitter-vfr");
+}
+
 #pragma mark - URL Scheme
 
 - (void)testURLScheme_valid
@@ -140,7 +149,7 @@
 - (void)testIsMobileSSO_success
 {
     NSURL *cancelURL = [NSURL URLWithString:@"twitterkit-xK8du://"];
-    NSURL *successURL = [NSURL URLWithString:@"twitterkit-xK8du://secret=RVfziSc&token=23698-mzYEJHqJ&username=fabric_tester"];
+    NSURL *successURL = [NSURL URLWithString:[@"twitterkit-xK8du://secret=RVfziSc&token=23698-mzYEJHqJ&username=fabric_tester&identifier=" stringByAppendingString:[self.loginURLParser.nonce stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.URLQueryAllowedCharacterSet]]];
 
     XCTAssertTrue([self.loginURLParser isMobileSSOSuccessURL:successURL]);
     XCTAssertFalse([self.loginURLParser isMobileSSOSuccessURL:cancelURL]);

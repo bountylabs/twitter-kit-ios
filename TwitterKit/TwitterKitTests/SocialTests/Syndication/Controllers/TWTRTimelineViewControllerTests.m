@@ -31,8 +31,8 @@
 #import "TWTRTweet.h"
 #import "TWTRTweetContentView+Layout.h"
 #import "TWTRTweetView.h"
-#import "TWTRTweetView_Private.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTweetView+Private.h"
+#import "TWTRTwitter+Private.h"
 
 @interface TWTRTimelineViewController ()
 - (void)setCurrentCursor:(TWTRTimelineCursor *)cursor;

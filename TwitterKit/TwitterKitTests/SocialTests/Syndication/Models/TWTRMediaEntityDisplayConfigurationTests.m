@@ -21,7 +21,7 @@
 #import "TWTRMediaEntityDisplayConfiguration.h"
 #import "TWTRTestCase.h"
 #import "TWTRTweetMediaEntity.h"
-#import "TWTRTweet_Private.h"
+#import "TWTRTweet+Private.h"
 
 @interface TWTRMediaEntityDisplayConfigurationTests : TWTRTestCase
 @property (nonatomic) TWTRTweetMediaEntity *obamaMediaEntity;
