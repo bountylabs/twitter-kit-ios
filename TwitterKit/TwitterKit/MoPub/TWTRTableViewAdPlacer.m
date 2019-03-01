@@ -18,7 +18,7 @@
 #import "TWTRTableViewAdPlacer.h"
 #import <MoPub/MPTableViewAdPlacer.h>
 #import "TWTRMoPubAdConfiguration.h"
-#import "TWTRMoPubAdConfiguration_Private.h"
+#import "TWTRMoPubAdConfiguration+Private.h"
 #import "TWTRMoPubVersionChecker.h"
 
 static Class TWTRTableViewAdPlacerClass = nil;

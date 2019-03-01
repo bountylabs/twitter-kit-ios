@@ -18,7 +18,7 @@
 #import "TWTRGuestSession.h"
 #import "TWTRAssertionMacros.h"
 #import "TWTRAuthenticationConstants.h"
-#import "TWTRGuestSession_Private.h"
+#import "TWTRGuestSession+Private.h"
 #import "TWTRUtils.h"
 
 NSString *const TWTRGuestSessionCreationDateKey = @"TWTRGuestSessionCreationDateKey";

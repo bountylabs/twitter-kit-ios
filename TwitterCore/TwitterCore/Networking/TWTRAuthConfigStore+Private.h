@@ -19,7 +19,7 @@
  This header is private to the Twitter Core SDK and not exposed for public SDK consumption
  */
 
-#import "TWTRAuthConfigStore_Private.h"
+#import "TWTRAuthConfigStore+Private.h"
 
 @class TWTRGenericKeychainItem;
 @class TWTRGenericKeychainQuery;

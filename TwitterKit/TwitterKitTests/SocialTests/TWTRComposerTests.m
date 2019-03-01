@@ -17,7 +17,7 @@
 
 #import <OCMock/OCMock.h>
 #import <TwitterCore/TWTRAuthenticationConstants.h>
-#import <TwitterCore/TWTRSessionStore_Private.h>
+#import <TwitterCore/TWTRSessionStore+Private.h>
 #import <XCTest/XCTest.h>
 #import <XCTest/XCTestCase+AsynchronousTesting.h>
 #import "TWTRComposer.h"
@@ -26,7 +26,7 @@
 #import "TWTRSharedComposerWrapper.h"
 #import "TWTRTweet.h"
 #import "TWTRTwitter.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTwitter+Private.h"
 
 @interface TWTRComposer () <TWTRComposerViewControllerDelegate>
 @end

@@ -21,8 +21,8 @@
 #import "TWTRTweet.h"
 #import "TWTRTweetImageView.h"
 #import "TWTRTweetMediaView.h"
-#import "TWTRTweetMediaView_Private.h"
-#import "TWTRTweet_Private.h"
+#import "TWTRTweetMediaView+Private.h"
+#import "TWTRTweet+Private.h"
 
 @interface TWTRTweetMediaViewDelegateStub : NSObject <TWTRTweetMediaViewDelegate>
 @property (nonatomic) BOOL shouldPresent;

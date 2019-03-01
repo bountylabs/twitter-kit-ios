@@ -19,7 +19,7 @@
 #import <TwitterCore/TWTRAPIErrorCode.h>
 #import <TwitterCore/TWTRSessionStore.h>
 #import <TwitterCore/TWTRUtils.h>
-#import "TWTRAPIClient_Private.h"
+#import "TWTRAPIClient+Private.h"
 #import "TWTRAnimatableImageView.h"
 #import "TWTRButtonAnimator.h"
 #import "TWTRFrameSheet.h"
@@ -31,9 +31,9 @@
 #import "TWTRTranslationsUtil.h"
 #import "TWTRTweet.h"
 #import "TWTRTweetRepository.h"
-#import "TWTRTweet_Private.h"
+#import "TWTRTweet+Private.h"
 #import "TWTRTwitter.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTwitter+Private.h"
 #import "TWTRViewUtil.h"
 
 typedef void (^TWTRTweetActionAPIClientCompletion)(TWTRAPIClient *_Nullable APIClient, NSError *_Nullable error);

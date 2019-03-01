@@ -17,7 +17,7 @@
 
 #import "TWTRTweetDelegationHelper.h"
 #import <UIKit/UIKit.h>
-#import "TWTRConstants_Private.h"
+#import "TWTRConstants+Private.h"
 #import "TWTROSVersionInfo.h"
 #import "TWTRTweet.h"
 #import "TWTRTweetCashtagEntity.h"

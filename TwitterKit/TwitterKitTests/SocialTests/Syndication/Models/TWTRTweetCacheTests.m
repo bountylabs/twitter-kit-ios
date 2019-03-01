@@ -21,7 +21,7 @@
 #import "TWTRTestCase.h"
 #import "TWTRTweet.h"
 #import "TWTRTweetCache.h"
-#import "TWTRTweet_Private.h"
+#import "TWTRTweet+Private.h"
 #import "TWTRUser.h"
 
 #define _TweetTestKey1(key) [NSString stringWithFormat:@"TWTRTweet:%td::%@", [TWTRTweet version], key]

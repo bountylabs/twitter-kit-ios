@@ -30,10 +30,10 @@
 #import <TwitterCore/TWTRNetworkingConstants.h>
 #import <TwitterCore/TWTRNetworkingPipeline.h>
 #import <TwitterCore/TWTRSessionStore.h>
-#import <TwitterCore/TWTRSessionStore_Private.h>
+#import <TwitterCore/TWTRSessionStore+Private.h>
 #import <TwitterCore/TWTRURLSessionDelegate.h>
 #import <TwitterCore/TWTRUserAuthRequestSigner.h>
-#import "TWTRAPIClient_Private.h"
+#import "TWTRAPIClient+Private.h"
 #import "TWTRAPIConstantsStatus.h"
 #import "TWTRAPIConstantsTimelines.h"
 #import "TWTRJSONSerialization.h"
@@ -43,10 +43,10 @@
 #import "TWTRTimelineParser.h"
 #import "TWTRTweet.h"
 #import "TWTRTweetRepository.h"
-#import "TWTRTweet_Private.h"
+#import "TWTRTweet+Private.h"
 #import "TWTRTwitterAPIConfiguration.h"
 #import "TWTRTwitterAPIServiceConfig.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTwitter+Private.h"
 #import "TWTRURLSessionConfig.h"
 #import "TWTRUser.h"
 

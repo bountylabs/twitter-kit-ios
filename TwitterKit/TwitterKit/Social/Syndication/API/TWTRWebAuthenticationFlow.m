@@ -18,7 +18,7 @@
 #import "TWTRWebAuthenticationFlow.h"
 #import <TwitterCore/TWTRAssertionMacros.h>
 #import <TwitterCore/TWTRSessionStore.h>
-#import <TwitterCore/TWTRSessionStore_Private.h>
+#import <TwitterCore/TWTRSessionStore+Private.h>
 #import "TWTRLoginURLParser.h"
 #import "TWTRTwitter.h"
 #import "TWTRWebAuthenticationTokenRequestor.h"

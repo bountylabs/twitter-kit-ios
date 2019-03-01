@@ -21,7 +21,7 @@
 #import <TwitterCore/TWTRAuthConfig.h>
 #import <TwitterCore/TWTRAuthenticationConstants.h>
 #import <TwitterCore/TWTRSessionStore.h>
-#import <TwitterCore/TWTRSessionStore_Private.h>
+#import <TwitterCore/TWTRSessionStore+Private.h>
 #import <TwitterCore/TWTRUserAPIClient.h>
 #import <TwitterCore/TWTRUtils.h>
 #import "TWTRLoginURLParser.h"

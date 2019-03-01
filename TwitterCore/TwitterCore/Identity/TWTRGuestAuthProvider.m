@@ -19,7 +19,7 @@
 #import "TWTRAPIServiceConfig.h"
 #import "TWTRAppAPIClient.h"
 #import "TWTRAuthenticationConstants.h"
-#import "TWTRAuthenticationProvider_Private.h"
+#import "TWTRAuthenticationProvider+Private.h"
 
 @interface TWTRGuestAuthProvider ()
 

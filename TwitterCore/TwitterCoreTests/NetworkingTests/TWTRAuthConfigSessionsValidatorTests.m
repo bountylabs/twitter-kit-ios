@@ -19,7 +19,7 @@
 #import <XCTest/XCTest.h>
 #import "TWTRAuthConfig.h"
 #import "TWTRAuthConfigSessionsValidator.h"
-#import "TWTRAuthConfigSessionsValidator_Private.h"
+#import "TWTRAuthConfigSessionsValidator+Private.h"
 #import "TWTRAuthConfigStore.h"
 #import "TWTRAuthenticationConstants.h"
 #import "TWTRErrorLogger.h"
@@ -27,7 +27,7 @@
 #import "TWTRGuestSession.h"
 #import "TWTRSession.h"
 #import "TWTRSessionStore.h"
-#import "TWTRSessionStore_Private.h"
+#import "TWTRSessionStore+Private.h"
 
 @interface TWTRSessionStore ()
 

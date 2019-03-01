@@ -18,7 +18,7 @@
 #import "TWTRTestCase.h"
 
 #import "TWTRAuthenticationProvider.h"
-#import "TWTRAuthenticationProvider_Private.h"
+#import "TWTRAuthenticationProvider+Private.h"
 
 @interface TWTRAuthenticationProviderTests : TWTRTestCase
 

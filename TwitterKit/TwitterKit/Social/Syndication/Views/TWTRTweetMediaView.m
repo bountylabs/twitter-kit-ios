@@ -30,8 +30,8 @@
 #import "TWTRTweet.h"
 #import "TWTRTweetImageView.h"
 #import "TWTRTweetMediaEntity.h"
-#import "TWTRTweet_Private.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTweet+Private.h"
+#import "TWTRTwitter+Private.h"
 #import "TWTRUser.h"  // for scribing
 #import "TWTRVideoControlsView.h"
 #import "TWTRVideoMetaData.h"

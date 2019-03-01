@@ -25,8 +25,8 @@
 #import "TWTRTranslationsUtil.h"
 #import "TWTRTweet.h"
 #import "TWTRTweetShareItemProvider.h"
-#import "TWTRTweetView_Private.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTweetView+Private.h"
+#import "TWTRTwitter+Private.h"
 
 @interface TWTRShareButton ()
 

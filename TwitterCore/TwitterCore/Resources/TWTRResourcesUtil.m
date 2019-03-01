@@ -19,7 +19,7 @@
 
 #import "TWTRCoreConstants.h"
 #import "TWTRCoreLanguage.h"
-#import "TWTRResourcesUtil_Private.h"
+#import "TWTRResourcesUtil+Private.h"
 
 NSString *const TWTRResourcesUtilLanguageType = @"lproj";
 NSString *const TWTRResourcesUtilFallbackLanguage = @"en";

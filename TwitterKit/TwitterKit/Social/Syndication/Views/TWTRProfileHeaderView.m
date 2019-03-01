@@ -25,7 +25,7 @@
 #import "TWTRTweet.h"
 #import "TWTRTweetPresenter.h"
 #import "TWTRTweetViewMetrics.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTwitter+Private.h"
 #import "TWTRUser.h"
 #import "TWTRVerifiedView.h"
 #import "TWTRViewUtil.h"

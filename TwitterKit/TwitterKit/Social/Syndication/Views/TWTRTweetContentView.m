@@ -18,7 +18,7 @@
 #import "TWTRTweetContentView.h"
 #import "TWTRFontUtil.h"
 #import "TWTRTweetContentView+Layout.h"
-#import "TWTRTweet_Private.h"
+#import "TWTRTweet+Private.h"
 #import "TWTRViewUtil.h"
 
 @interface TWTRTweetContentView ()

@@ -18,7 +18,7 @@
 #import "TWTRSession.h"
 #import "TWTRAssertionMacros.h"
 #import "TWTRAuthenticationConstants.h"
-#import "TWTRSession_Private.h"
+#import "TWTRSession+Private.h"
 
 @implementation TWTRSession
 

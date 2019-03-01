@@ -20,7 +20,7 @@
 #import <TwitterCore/TWTRSession.h>
 #import <TwitterCore/TWTRSessionStore.h>
 #import "TWTRAPIClient.h"
-#import "TWTRAPIClient_Private.h"
+#import "TWTRAPIClient+Private.h"
 #import "TWTRFixtureLoader.h"
 #import "TWTRStubTweetCache.h"
 #import "TWTRStubTwitterClient.h"

@@ -18,7 +18,7 @@
 #import "TWTRMultiImageViewController.h"
 #import <TwitterCore/TWTRAssertionMacros.h>
 #import "TWTRImageViewController.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTwitter+Private.h"
 
 @interface TWTRMultiImageViewController () <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 

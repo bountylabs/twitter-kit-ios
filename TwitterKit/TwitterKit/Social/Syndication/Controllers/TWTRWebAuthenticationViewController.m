@@ -23,12 +23,12 @@
 #import <TwitterCore/TWTRAuthConfig.h>
 #import <TwitterCore/TWTRAuthenticationConstants.h>
 #import <TwitterCore/TWTRSession.h>
-#import <TwitterCore/TWTRSession_Private.h>
+#import <TwitterCore/TWTRSession+Private.h>
 #import <TwitterCore/TWTRUserAPIClient.h>
 #import <TwitterCore/TWTRUtils.h>
 #import "TWTRErrors.h"
 #import "TWTRLoginURLParser.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTwitter+Private.h"
 #import "TWTRWebViewController.h"
 
 @interface TWTRWebAuthenticationViewController () <SFSafariViewControllerDelegate>

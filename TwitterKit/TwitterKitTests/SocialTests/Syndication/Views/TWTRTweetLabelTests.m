@@ -21,7 +21,7 @@
 #import "TWTRFixtureLoader.h"
 #import "TWTRTweetLabel.h"
 #import "TWTRTweetUrlEntity.h"
-#import "TWTRTweet_Private.h"
+#import "TWTRTweet+Private.h"
 
 @interface TWTRTweetEntityRange ()
 - (instancetype)initWithEntity:(TWTRTweetEntity *)entity textRange:(NSRange)range;

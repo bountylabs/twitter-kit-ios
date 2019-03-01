@@ -21,7 +21,7 @@
 #import <TwitterCore/TWTRDateUtil.h>
 #import <TwitterCore/TWTRUtils.h>
 #import "TWTRCardEntity.h"
-#import "TWTRConstants_Private.h"
+#import "TWTRConstants+Private.h"
 #import "TWTRFontUtil.h"
 #import "TWTRImageLoader.h"
 #import "TWTRImageViewController.h"
@@ -43,9 +43,9 @@
 #import "TWTRTweetRepository.h"
 #import "TWTRTweetUrlEntity.h"
 #import "TWTRTweetViewMetrics.h"
-#import "TWTRTweetView_Private.h"
-#import "TWTRTweet_Private.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTweetView+Private.h"
+#import "TWTRTweet+Private.h"
+#import "TWTRTwitter+Private.h"
 #import "TWTRUser.h"
 #import "TWTRVideoMetaData.h"
 #import "TWTRVideoPlaybackConfiguration.h"

@@ -21,7 +21,7 @@
 #import "TWTRLoginURLParser.h"
 #import "TWTRTestSessionStore.h"
 #import "TWTRTwitter.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTwitter+Private.h"
 #import "TWTRWebAuthenticationFlow.h"
 #import "TWTRWebAuthenticationViewController.h"
 

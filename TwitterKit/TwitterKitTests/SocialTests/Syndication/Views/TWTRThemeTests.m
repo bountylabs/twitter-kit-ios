@@ -21,7 +21,7 @@
 #import "TWTRTweetContentView+Layout.h"
 #import "TWTRTweetLabel.h"
 #import "TWTRTweetView.h"
-#import "TWTRTweetView_Private.h"
+#import "TWTRTweetView+Private.h"
 
 /**
  *  Removes all the recorded invocations in the provided UIAppearance proxy for TWTRTweetView.

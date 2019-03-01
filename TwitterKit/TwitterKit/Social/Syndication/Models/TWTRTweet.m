@@ -32,7 +32,7 @@
 #import "TWTRTweetMediaEntity.h"
 #import "TWTRTweetUrlEntity.h"
 #import "TWTRTweet_Constants.h"
-#import "TWTRTweet_Private.h"
+#import "TWTRTweet+Private.h"
 #import "TWTRURLUtility.h"
 #import "TWTRUser.h"
 #import "TWTRValueTransformers.h"

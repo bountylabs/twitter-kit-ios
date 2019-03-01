@@ -23,7 +23,7 @@
 #import "TWTRSharedComposerWrapper.h"
 #import "TWTRTweet.h"
 #import "TWTRTwitter.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTwitter+Private.h"
 
 @interface TWTRSETweetShareViewController ()
 @property (nonatomic, nonnull, readonly) TWTRSETweetShareConfiguration *configuration;

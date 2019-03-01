@@ -18,13 +18,13 @@
 #import <OCMock/OCMock.h>
 #import <SafariServices/SafariServices.h>
 #import <TwitterCore/TWTRAuthConfig.h>
-#import <TwitterCore/TWTRSessionStore_Private.h>
+#import <TwitterCore/TWTRSessionStore+Private.h>
 #import <TwitterCore/TWTRUtils.h>
 #import <XCTest/XCTest.h>
 #import "TWTRAPIClient.h"
 #import "TWTRLoginURLParser.h"
 #import "TWTRTwitter.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTwitter+Private.h"
 #import "TWTRWebAuthenticationViewController.h"
 #import "TWTRWebViewController.h"
 

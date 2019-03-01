@@ -25,7 +25,7 @@
 #import "TWTRSession.h"
 #import "TWTRSessionRefreshStrategy.h"
 
-#import "TWTRSessionStore_Private.h"
+#import "TWTRSessionStore+Private.h"
 
 static NSString *const TWTRSessionStoreGuestUserName = @"com.twitter.sdk.ios.core.guest-session-user";
 

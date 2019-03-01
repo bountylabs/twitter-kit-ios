@@ -26,8 +26,8 @@
 #import "TWTRTweetHashtagEntity.h"
 #import "TWTRTweetUrlEntity.h"
 #import "TWTRTweetUserMentionEntity.h"
-#import "TWTRTweet_Private.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTweet+Private.h"
+#import "TWTRTwitter+Private.h"
 #import "TWTRUser.h"
 
 @interface TWTRTimelineFilterManager ()

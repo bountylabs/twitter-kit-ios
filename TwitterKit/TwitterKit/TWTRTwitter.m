@@ -30,13 +30,13 @@
 #import <TwitterCore/TWTRResourcesUtil.h>
 #import <TwitterCore/TWTRSessionRefreshStrategy.h>
 #import <TwitterCore/TWTRSessionStore.h>
-#import <TwitterCore/TWTRSessionStore_Private.h>
-#import <TwitterCore/TWTRSession_Private.h>
+#import <TwitterCore/TWTRSessionStore+Private.h>
+#import <TwitterCore/TWTRSession+Private.h>
 #import <TwitterCore/TWTRUtils.h>
 #import "TWTRAPIClient.h"
-#import "TWTRAPIClient_Private.h"
+#import "TWTRAPIClient+Private.h"
 #import "TWTRAssetURLSessionConfig.h"
-#import "TWTRConstants_Private.h"
+#import "TWTRConstants+Private.h"
 #import "TWTRCookieStorageUtil.h"
 #import "TWTRImageLoader.h"
 #import "TWTRLoginURLParser.h"
@@ -51,7 +51,7 @@
 #import "TWTRTweetRepository.h"
 #import "TWTRTweetViewDelegate.h"
 #import "TWTRTwitterAPIServiceConfig.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTwitter+Private.h"
 #import "TWTRURLSessionConfig.h"
 #import "TWTRUser.h"
 #import "TWTRWebAuthenticationFlow.h"

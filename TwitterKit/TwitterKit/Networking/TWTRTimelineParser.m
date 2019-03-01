@@ -21,7 +21,7 @@
 #import <TwitterCore/TWTRDictUtil.h>
 #import "TWTRAPIConstantsStatus.h"
 #import "TWTRTweet.h"
-#import "TWTRTweet_Private.h"
+#import "TWTRTweet+Private.h"
 #import "TWTRUser.h"
 
 NSString *_Nullable decrementTweetPosition(NSString *tweetPosition)

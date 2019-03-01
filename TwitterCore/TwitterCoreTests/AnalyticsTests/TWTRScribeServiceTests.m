@@ -24,7 +24,7 @@
 #import "TWTRNetworking.h"
 #import "TWTRNetworkingPipeline.h"
 #import "TWTRScribeClientEventNamespace.h"
-#import "TWTRScribeClientEventNamespace_Private.h"
+#import "TWTRScribeClientEventNamespace+Private.h"
 #import "TWTRScribeEvent.h"
 #import "TWTRScribeService.h"
 #import "TWTRSession.h"

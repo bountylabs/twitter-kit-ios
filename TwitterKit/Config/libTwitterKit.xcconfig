@@ -19,6 +19,6 @@ SUPPORTED_PLATFORMS = iphonesimulator iphoneos
 
 PRIVATE_HEADERS_FOLDER_PATH = PrivateHeaders/${PRODUCT_NAME}
 PUBLIC_HEADERS_FOLDER_PATH = Headers/${PRODUCT_NAME}
-HEADER_SEARCH_PATHS = $(inherited) $(TARGET_BUILD_DIR)/Headers/ $(TARGET_BUILD_DIR)/PrivateHeaders/
+//HEADER_SEARCH_PATHS = $(inherited) $(TARGET_BUILD_DIR)/Headers/ $(TARGET_BUILD_DIR)/PrivateHeaders/
 GCC_PREFIX_HEADER = TwitterKit/Supporting Files/TwitterKit-Prefix.pch
 FRAMEWORK_SEARCH_PATHS = $(PROJECT_DIR)/../vendor

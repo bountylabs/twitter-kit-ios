@@ -26,7 +26,7 @@
 #import "TWTRMediaEntityDisplayConfiguration.h"
 #import "TWTRTweetImageViewPill.h"
 #import "TWTRTweetMediaEntity.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTwitter+Private.h"
 #import "TWTRVideoMetaData.h"
 #import "TWTRViewUtil.h"
 

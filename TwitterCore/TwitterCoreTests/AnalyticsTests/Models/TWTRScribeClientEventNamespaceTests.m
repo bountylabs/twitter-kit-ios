@@ -16,7 +16,7 @@
  */
 
 #import "TWTRScribeClientEventNamespace.h"
-#import "TWTRScribeClientEventNamespace_Private.h"
+#import "TWTRScribeClientEventNamespace+Private.h"
 #import "TWTRScribeEvent.h"
 #import "TWTRTestCase.h"
 

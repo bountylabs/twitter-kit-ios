@@ -20,7 +20,7 @@
  */
 
 #import <TwitterCore/TWTRSessionStore.h>
-#import <TwitterCore/TWTRSessionStore_Private.h>
+#import <TwitterCore/TWTRSessionStore+Private.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

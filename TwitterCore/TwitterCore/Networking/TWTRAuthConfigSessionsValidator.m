@@ -21,7 +21,7 @@
 #import "TWTRAuthConfigStore.h"
 #import "TWTRAuthSession.h"
 #import "TWTRSessionStore.h"
-#import "TWTRSessionStore_Private.h"
+#import "TWTRSessionStore+Private.h"
 
 @interface TWTRAuthConfigSessionsValidator ()
 

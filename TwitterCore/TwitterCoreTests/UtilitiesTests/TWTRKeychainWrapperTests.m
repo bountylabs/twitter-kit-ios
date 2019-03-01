@@ -17,7 +17,7 @@
 
 #import <OCMock/OCMock.h>
 #import "TWTRKeychainWrapper.h"
-#import "TWTRKeychainWrapper_Private.h"
+#import "TWTRKeychainWrapper+Private.h"
 #import "TWTRSecItemWrapper.h"
 #import "TWTRTestCase.h"
 

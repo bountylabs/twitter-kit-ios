@@ -18,7 +18,7 @@
 #import "TWTRTweetShareItemProvider.h"
 #import "TWTRTranslationsUtil.h"
 #import "TWTRTweet.h"
-#import "TWTRTweetShareItemProvider_Private.h"
+#import "TWTRTweetShareItemProvider+Private.h"
 #import "TWTRUser.h"
 
 NSString *const TWTRTweetShareItemProviderPlaceholder = @"";

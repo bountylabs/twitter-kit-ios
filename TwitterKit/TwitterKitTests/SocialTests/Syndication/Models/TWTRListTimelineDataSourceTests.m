@@ -17,7 +17,7 @@
 
 #import <OCMock/OCMock.h>
 #import <XCTest/XCTest.h>
-#import "TWTRAPIClient_Private.h"
+#import "TWTRAPIClient+Private.h"
 #import "TWTRListTimelineDataSource.h"
 #import "TWTRTestCase.h"
 

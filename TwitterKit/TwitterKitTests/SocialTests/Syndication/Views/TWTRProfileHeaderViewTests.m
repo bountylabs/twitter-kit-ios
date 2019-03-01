@@ -23,7 +23,7 @@
 #import "TWTRRetweetView.h"
 #import "TWTRTimestampLabel.h"
 #import "TWTRTweet.h"
-#import "TWTRTwitter_Private.h"
+#import "TWTRTwitter+Private.h"
 #import "TWTRUser.h"
 #import "TWTRVerifiedView.h"
 
