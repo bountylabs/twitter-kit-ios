@@ -76,7 +76,7 @@
 		3DC7308D1B55BED300A0699A /* TWTRAppleSocialAuthProviderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7308C1B55BED300A0699A /* TWTRAppleSocialAuthProviderTests.m */; };
 		3DEEF7C21B7A769900A1B457 /* TWTRNetworkingConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D79FD101ABA6E2C009E5D38 /* TWTRNetworkingConstants.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3DEEF7C31B7A769A00A1B457 /* TWTRNetworkingConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D79FD101ABA6E2C009E5D38 /* TWTRNetworkingConstants.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		62C446962228C0D7003541E9 /* TWTRURLSessionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DBAFACB91B71748B0065B9B2 /* TWTRURLSessionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62C446962228C0D7003541E9 /* TWTRURLSessionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DBAFACB91B71748B0065B9B2 /* TWTRURLSessionDelegate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		62C446972228C165003541E9 /* TWTRAppAuthProvider+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3E7CD71B1A35260042B1CC /* TWTRAppAuthProvider+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6C0DE2081C050E7700FC4CAC /* TWTRAPIDateSync.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C0DE2071C050D9500FC4CAC /* TWTRAPIDateSync.h */; };
 		6C0DE2091C050E7F00FC4CAC /* TWTRAPIDateSync.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C0DE2071C050D9500FC4CAC /* TWTRAPIDateSync.h */; };
@@ -272,7 +272,7 @@
 		DBADE6681BAB686000C838A5 /* TWTRMultipartFormDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = DBADE6661BAB686000C838A5 /* TWTRMultipartFormDocument.m */; };
 		DBADE66D1BAB6B0900C838A5 /* TWTRMultipartFormDocumentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBADE66C1BAB6B0900C838A5 /* TWTRMultipartFormDocumentTests.m */; };
 		DBADE66E1BAB7DE000C838A5 /* TWTRMultipartFormDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = DBADE6651BAB686000C838A5 /* TWTRMultipartFormDocument.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		DBAFACBB1B71748B0065B9B2 /* TWTRURLSessionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DBAFACB91B71748B0065B9B2 /* TWTRURLSessionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBAFACBB1B71748B0065B9B2 /* TWTRURLSessionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DBAFACB91B71748B0065B9B2 /* TWTRURLSessionDelegate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		DBAFACBC1B71748B0065B9B2 /* TWTRURLSessionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAFACBA1B71748B0065B9B2 /* TWTRURLSessionDelegate.m */; };
 		DBAFACBE1B717FFC0065B9B2 /* TWTRURLSessionDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAFACBD1B717FFC0065B9B2 /* TWTRURLSessionDelegateTests.m */; };
 		DBB4945E1B4596DC00F08FA5 /* TWTRGenericKeychainItem.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB4945C1B4596DC00F08FA5 /* TWTRGenericKeychainItem.h */; settings = {ATTRIBUTES = (Private, ); }; };
