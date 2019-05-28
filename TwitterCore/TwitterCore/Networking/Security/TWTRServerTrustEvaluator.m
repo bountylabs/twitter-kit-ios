@@ -67,6 +67,17 @@ static NSCache *TWTRCertificateCache;
 
 - (BOOL)evaluateServerTrust:(SecTrustRef)serverTrust forDomain:(NSString *)domain
 {
+    // Ensures the hostname in the ServerTrust object matches the one passed into this method
+    if (domain != nil && domain.length > 0) {
+        SecPolicyRef policy = SecPolicyCreateSSL(true, (__bridge CFStringRef)domain);
+        OSStatus result = SecTrustSetPolicies(serverTrust, policy);
+        CFRelease(policy);
+
+        if (result != errSecSuccess) {
+            return NO;
+        }
+    }
+
     if ([TWTRServerTrustEvaluator isCertificateChainCached:serverTrust]) {
         return YES;
     }
